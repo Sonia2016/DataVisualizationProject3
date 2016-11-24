@@ -38,7 +38,10 @@ In data set tab, we open the one of the cancer studies and after that downloaded
     1.	Based on the dataset we have 147 different studies 
     2.	The current template that professor gave us has 126 different studies
   
-
+- Jeff
+  1. I was able to begin converting the web api calls from the AngularJS application to pure JavaScript. I've put together a barebones site that includes a call to the method that returns the list of all studies.
+  2. The service objects use Promises to defer execution until the web api calls return; these are supported by Chrome.
+  3. Next up will be to add the remaining api calls so we can pull the rest of the data as needed.
 
 
 
