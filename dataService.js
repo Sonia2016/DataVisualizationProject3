@@ -137,6 +137,30 @@ var dataService = function () {
         };
     };
 
+    var geneFileService = function () {
+        return {
+            getData: function () {
+                return new Promise(function (resolve, reject) {
+                    var request = new XMLHttpRequest();
+                    var url = "data/genes.json";
+                    request.open("GET", url);
+                    request.responseType = "json";
+                    request.onload = function () {
+                        if (request.status === 200) {
+                            resolve(request.response);
+                        } else {
+                            reject(Error('Data didn\'t load successfully; error code:' + request.statusText));
+                        }
+                    };
+                    request.onerror = function () {
+                        reject(Error('There was a network error.'));
+                    };
+                    request.send();
+                });
+            }
+        };
+    };
+
     return {
         getTypesOfCancer: typesOfCancerService().getData,
         getCancerStudies: cancerStudiesService().getData,
@@ -146,7 +170,8 @@ var dataService = function () {
         getExtendedMutationData: extendedMutationDataService().getData,
         getClinicalData: clinicalDataService().getData,
         getProteinArrayInfo: proteinArrayInfoService().getData,
-        getProteinArrayData: proteinArrayDataService().getData
+        getProteinArrayData: proteinArrayDataService().getData,
+        getGeneList: geneFileService().getData
     };
 };
 
