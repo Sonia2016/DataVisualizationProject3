@@ -6,14 +6,31 @@ Project 3: Network visualization
 We check the cbioportal webpage for obtaining the data.
 In data set tab, we open the one of the cancer studies and after that downloaded the data "Download Data". In that folder we need the file called "data_mutations_extended.txt".
 
-- [ ] Check how to connect to the web application and obtain related data to the specific study
-- [ ] Reading the study and figure out which information (Maede and Sonia)
+- [X] Check how to connect to the web application and obtain related data to the specific study
+- [X] Reading the study and figure out which information (Maede and Sonia)
   1. Gene
   2. Study or disease
     1. which info in those studies are important such as gender
 - [ ] Decide which types of visualization do we want to select (pie, plot, ...) (at this step - Maede and Sonia)
 
-##### Next meeting Monday 21th 2:30pm
+##### Next meeting Monday 21st 2:30pm
+
+### Second Meeting - November 21st
+Discuss about what we did and deliever what we done so far, you can check them in our action list
+
+##### Next meeting Friday 25th 2:00pm
+
+
+### Third Meeting - November 25th
+Each of us was working on the understanding the concept related to the cancer to how to visualize the most important of them.
+According too much work and not understandable data in this webpage we decided to determine our work by our preference.
+We want to work just 4 studies (related to Melanoma: one of us has family history about this disease) and we decided to partition our work in parallel.
+
+- [ ] Complete the data obtaining from the webpage - Jeff
+- [ ] Working on how to visualize the data related to the each study (which/how) - Maede
+- [ ] Find the criteria for visualizing the gene interaction and network of them - Sonia
+##### Next meeting Monday 28th 4:30pm
+
 
 ###### Action List
 - Sonia
