@@ -1,0 +1,562 @@
+geneA	geneB	p-Value	Log Odds Ratio	Association
+RB1	RBL1	0.6116583161682073	-Infinity	Tendency towards mutual exclusivity
+RB1	RBL2	0.8130286825474664	-Infinity	Tendency towards mutual exclusivity
+RB1	CCNA1	0.12837465564737582	2.772588722239781	Tendency towards co-occurrence
+RB1	CCNB1	0.0661157024793399	Infinity	Tendency towards co-occurrence
+RB1	CDK1	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	CCNE1	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	CDK2	0.8716253443525519	-Infinity	Tendency towards mutual exclusivity
+RB1	CDC25A	0.8716253443525519	-Infinity	Tendency towards mutual exclusivity
+RB1	CCND1	0.8716253443525519	-Infinity	Tendency towards mutual exclusivity
+RB1	CDK4	0.6573897790593761	-Infinity	Tendency towards mutual exclusivity
+RB1	CDK6	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	CCND2	0.7579080939000985	-Infinity	Tendency towards mutual exclusivity
+RB1	CDKN2A	0.5285448480003265	-0.5260930958967791	Tendency towards mutual exclusivity
+RB1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+RB1	MYC	0.8716253443525519	-Infinity	Tendency towards mutual exclusivity
+RB1	CDKN1A	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+RB1	E2F1	0.7579080939000985	-Infinity	Tendency towards mutual exclusivity
+RB1	E2F2	1	Infinity	Tendency towards co-occurrence
+RB1	E2F3	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	E2F4	0.8716253443525519	-Infinity	Tendency towards mutual exclusivity
+RB1	E2F5	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	E2F6	0.12837465564737582	2.772588722239781	Tendency towards co-occurrence
+RB1	E2F7	0.6573897790593761	-Infinity	Tendency towards mutual exclusivity
+RB1	E2F8	0.7579080939000985	-Infinity	Tendency towards mutual exclusivity
+RB1	SRC	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RB1	JAK1	0.06822144359427866	1.9740810260220096	Tendency towards co-occurrence
+RB1	JAK2	0.29391468175117397	1.3591433720539399	Tendency towards co-occurrence
+RB1	STAT1	0.0038567493112945652	Infinity	Tendency towards co-occurrence(Significant)
+RB1	STAT2	0.7579080939000985	-Infinity	Tendency towards mutual exclusivity
+RB1	STAT3	0.8130286825474664	-Infinity	Tendency towards mutual exclusivity
+RB1	STAT5A	0.8716253443525519	-Infinity	Tendency towards mutual exclusivity
+RB1	STAT5B	0.9338842975206478	-Infinity	Tendency towards mutual exclusivity
+RBL1	RBL2	0.8350024307244328	-Infinity	Tendency towards mutual exclusivity
+RBL1	CCNA1	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+RBL1	CCNB1	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	CDK1	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	CCNE1	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	CDK2	0.0028925619834710707	Infinity	Tendency towards co-occurrence(Significant)
+RBL1	CDC25A	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+RBL1	CCND1	0.11280991735536354	2.9356283494842854	Tendency towards co-occurrence
+RBL1	CDK4	0.30608856654859695	1.2901505005669884	Tendency towards co-occurrence
+RBL1	CDK6	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	CCND2	0.7854683882237564	-Infinity	Tendency towards mutual exclusivity
+RBL1	CDKN2A	0.6025411267204008	-0.3610133455373305	Tendency towards mutual exclusivity
+RBL1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+RBL1	MYC	0.11280991735536354	2.9356283494842854	Tendency towards co-occurrence
+RBL1	CDKN1A	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+RBL1	E2F1	0.21453161177624405	1.8191584434161694	Tendency towards co-occurrence
+RBL1	E2F2	1	Infinity	Tendency towards co-occurrence
+RBL1	E2F3	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	E2F4	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+RBL1	E2F5	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	E2F6	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+RBL1	E2F7	0.30608856654859695	1.2901505005669884	Tendency towards co-occurrence
+RBL1	E2F8	0.7854683882237564	-Infinity	Tendency towards mutual exclusivity
+RBL1	SRC	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL1	JAK1	0.34832665380214195	1.0986122886681096	Tendency towards co-occurrence
+RBL1	JAK2	0.26152544696910524	1.5224265354444706	Tendency towards co-occurrence
+RBL1	STAT1	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+RBL1	STAT2	0.7854683882237564	-Infinity	Tendency towards mutual exclusivity
+RBL1	STAT3	0.16499756927564904	2.2335922215070942	Tendency towards co-occurrence
+RBL1	STAT5A	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+RBL1	STAT5B	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+RBL2	CCNA1	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	CCNB1	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDK1	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	CCNE1	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDK2	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDC25A	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	CCND1	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDK4	0.8573685672616521	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDK6	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	CCND2	0.9032918952705898	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDKN2A	0.5281477880408427	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDKN2B	1	Infinity	Tendency towards co-occurrence
+RBL2	MYC	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDKN1A	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	CDKN1B	1	Infinity	Tendency towards co-occurrence
+RBL2	E2F1	0.9032918952705898	-Infinity	Tendency towards mutual exclusivity
+RBL2	E2F2	1	Infinity	Tendency towards co-occurrence
+RBL2	E2F3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	E2F4	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	E2F5	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	E2F6	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	E2F7	0.8573685672616521	-Infinity	Tendency towards mutual exclusivity
+RBL2	E2F8	0.9032918952705898	-Infinity	Tendency towards mutual exclusivity
+RBL2	SRC	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+RBL2	JAK1	0.8350024307243379	-Infinity	Tendency towards mutual exclusivity
+RBL2	JAK2	0.8801305646225439	-Infinity	Tendency towards mutual exclusivity
+RBL2	STAT1	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	STAT2	0.9032918952705898	-Infinity	Tendency towards mutual exclusivity
+RBL2	STAT3	0.9268560316688593	-Infinity	Tendency towards mutual exclusivity
+RBL2	STAT5A	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+RBL2	STAT5B	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CCNB1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDK1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CCNE1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDK2	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDC25A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CCND1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDK4	0.902892561983517	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDK6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CCND2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDKN2A	0.34531680440771234	1.483668525145067	Tendency towards co-occurrence
+CCNA1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CCNA1	MYC	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDKN1A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CCNA1	E2F1	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCNA1	E2F2	1	Infinity	Tendency towards co-occurrence
+CCNA1	E2F3	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	E2F4	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCNA1	E2F5	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	E2F6	0.03292011019283206	4.770684624465665	Tendency towards co-occurrence(Significant)
+CCNA1	E2F7	0.902892561983517	-Infinity	Tendency towards mutual exclusivity
+CCNA1	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCNA1	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNA1	JAK1	0.8871900826447561	-Infinity	Tendency towards mutual exclusivity
+CCNA1	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+CCNA1	STAT1	0.03292011019283206	4.770684624465665	Tendency towards co-occurrence(Significant)
+CCNA1	STAT2	0.06528925619834969	3.654977902438255	Tendency towards co-occurrence
+CCNA1	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+CCNA1	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCNA1	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDK1	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CCNE1	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDK2	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDC25A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CCND1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDK4	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDK6	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CCND2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDKN2A	0.8099173553718794	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CCNB1	MYC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDKN1A	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CCNB1	E2F1	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNB1	E2F2	1	Infinity	Tendency towards co-occurrence
+CCNB1	E2F3	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	E2F4	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	E2F5	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	E2F7	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CCNB1	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNB1	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNB1	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+CCNB1	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+CCNB1	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNB1	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+CCNB1	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNB1	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	CCNE1	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDK2	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDC25A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	CCND1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDK4	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDK6	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	CCND2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDKN2A	0.8099173553718794	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CDK1	MYC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDKN1A	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDK1	E2F1	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK1	E2F2	1	Infinity	Tendency towards co-occurrence
+CDK1	E2F3	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	E2F4	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	E2F5	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	E2F7	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CDK1	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK1	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK1	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+CDK1	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+CDK1	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	STAT2	0.03305785123967177	Infinity	Tendency towards co-occurrence(Significant)
+CDK1	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+CDK1	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK1	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CDK2	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CDC25A	0.016528925619834912	Infinity	Tendency towards co-occurrence(Significant)
+CCNE1	CCND1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CDK4	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CDK6	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CCND2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CDKN2A	0.19008264462809168	Infinity	Tendency towards co-occurrence
+CCNE1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CCNE1	MYC	0.016528925619834912	Infinity	Tendency towards co-occurrence(Significant)
+CCNE1	CDKN1A	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNE1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CCNE1	E2F1	0.03305785123967177	Infinity	Tendency towards co-occurrence(Significant)
+CCNE1	E2F2	1	Infinity	Tendency towards co-occurrence
+CCNE1	E2F3	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNE1	E2F4	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNE1	E2F5	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNE1	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNE1	E2F7	0.04958677685950744	Infinity	Tendency towards co-occurrence(Significant)
+CCNE1	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNE1	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCNE1	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+CCNE1	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+CCNE1	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNE1	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CCNE1	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+CCNE1	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCNE1	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK2	CDC25A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDK2	CCND1	0.03292011019283206	4.770684624465665	Tendency towards co-occurrence(Significant)
+CDK2	CDK4	0.09710743801654134	3.126760535960395	Tendency towards co-occurrence
+CDK2	CDK6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK2	CCND2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CDK2	CDKN2A	0.654683195592242	-Infinity	Tendency towards mutual exclusivity
+CDK2	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CDK2	MYC	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDK2	CDKN1A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK2	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDK2	E2F1	0.06528925619834969	3.654977902438255	Tendency towards co-occurrence
+CDK2	E2F2	1	Infinity	Tendency towards co-occurrence
+CDK2	E2F3	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK2	E2F4	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDK2	E2F5	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK2	E2F6	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDK2	E2F7	0.09710743801654134	3.126760535960395	Tendency towards co-occurrence
+CDK2	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CDK2	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK2	JAK1	0.8871900826447561	-Infinity	Tendency towards mutual exclusivity
+CDK2	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+CDK2	STAT1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDK2	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CDK2	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+CDK2	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDK2	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDC25A	CCND1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDC25A	CDK4	0.902892561983517	-Infinity	Tendency towards mutual exclusivity
+CDC25A	CDK6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDC25A	CCND2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CDC25A	CDKN2A	0.34531680440771234	1.483668525145067	Tendency towards co-occurrence
+CDC25A	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CDC25A	MYC	0.03292011019283206	4.770684624465665	Tendency towards co-occurrence(Significant)
+CDC25A	CDKN1A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDC25A	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDC25A	E2F1	0.06528925619834969	3.654977902438255	Tendency towards co-occurrence
+CDC25A	E2F2	1	Infinity	Tendency towards co-occurrence
+CDC25A	E2F3	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDC25A	E2F4	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDC25A	E2F5	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDC25A	E2F6	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDC25A	E2F7	0.09710743801654134	3.126760535960395	Tendency towards co-occurrence
+CDC25A	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CDC25A	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDC25A	JAK1	0.8871900826447561	-Infinity	Tendency towards mutual exclusivity
+CDC25A	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+CDC25A	STAT1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDC25A	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CDC25A	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+CDC25A	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CDC25A	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCND1	CDK4	0.09710743801654134	3.126760535960395	Tendency towards co-occurrence
+CCND1	CDK6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCND1	CCND2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND1	CDKN2A	0.34531680440771234	1.483668525145067	Tendency towards co-occurrence
+CCND1	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CCND1	MYC	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCND1	CDKN1A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCND1	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CCND1	E2F1	0.06528925619834969	3.654977902438255	Tendency towards co-occurrence
+CCND1	E2F2	1	Infinity	Tendency towards co-occurrence
+CCND1	E2F3	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCND1	E2F4	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCND1	E2F5	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCND1	E2F6	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCND1	E2F7	0.902892561983517	-Infinity	Tendency towards mutual exclusivity
+CCND1	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND1	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CCND1	JAK1	0.8871900826447561	-Infinity	Tendency towards mutual exclusivity
+CCND1	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+CCND1	STAT1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCND1	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND1	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+CCND1	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+CCND1	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK4	CDK6	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+CDK4	CCND2	0.8137735553669291	-Infinity	Tendency towards mutual exclusivity
+CDK4	CDKN2A	0.27388233032741943	-Infinity	Tendency towards mutual exclusivity
+CDK4	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CDK4	MYC	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+CDK4	CDKN1A	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+CDK4	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDK4	E2F1	0.1862264446330396	2.0104486701928845	Tendency towards co-occurrence
+CDK4	E2F2	1	Infinity	Tendency towards co-occurrence
+CDK4	E2F3	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+CDK4	E2F4	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+CDK4	E2F5	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+CDK4	E2F6	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+CDK4	E2F7	0.7321083930909213	-Infinity	Tendency towards mutual exclusivity
+CDK4	E2F8	0.1862264446330396	2.0104486701928845	Tendency towards co-occurrence
+CDK4	SRC	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+CDK4	JAK1	0.6939114334515125	-Infinity	Tendency towards mutual exclusivity
+CDK4	JAK2	0.7720415781687214	-Infinity	Tendency towards mutual exclusivity
+CDK4	STAT1	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+CDK4	STAT2	0.8137735553669291	-Infinity	Tendency towards mutual exclusivity
+CDK4	STAT3	0.8573685672615547	-Infinity	Tendency towards mutual exclusivity
+CDK4	STAT5A	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+CDK4	STAT5B	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+CDK6	CCND2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK6	CDKN2A	0.8099173553718794	-Infinity	Tendency towards mutual exclusivity
+CDK6	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CDK6	MYC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK6	CDKN1A	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK6	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDK6	E2F1	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK6	E2F2	1	Infinity	Tendency towards co-occurrence
+CDK6	E2F3	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK6	E2F4	0.016528925619834912	Infinity	Tendency towards co-occurrence(Significant)
+CDK6	E2F5	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK6	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK6	E2F7	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CDK6	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK6	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDK6	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+CDK6	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+CDK6	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK6	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDK6	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+CDK6	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDK6	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CCND2	CDKN2A	0.4252037276599837	-Infinity	Tendency towards mutual exclusivity
+CCND2	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CCND2	MYC	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND2	CDKN1A	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+CCND2	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CCND2	E2F1	0.1273281689759575	2.538973871058276	Tendency towards co-occurrence
+CCND2	E2F2	1	Infinity	Tendency towards co-occurrence
+CCND2	E2F3	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+CCND2	E2F4	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND2	E2F5	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+CCND2	E2F6	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND2	E2F7	0.8137735553669291	-Infinity	Tendency towards mutual exclusivity
+CCND2	E2F8	0.8726718310240545	-Infinity	Tendency towards mutual exclusivity
+CCND2	SRC	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+CCND2	JAK1	0.7854683882237564	-Infinity	Tendency towards mutual exclusivity
+CCND2	JAK2	0.8428368966301313	-Infinity	Tendency towards mutual exclusivity
+CCND2	STAT1	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND2	STAT2	0.8726718310240545	-Infinity	Tendency towards mutual exclusivity
+CCND2	STAT3	0.9032918952704871	-Infinity	Tendency towards mutual exclusivity
+CCND2	STAT5A	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+CCND2	STAT5B	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	CDKN2B	1	Infinity	Tendency towards co-occurrence
+CDKN2A	MYC	0.34531680440771234	1.483668525145067	Tendency towards co-occurrence
+CDKN2A	CDKN1A	0.8099173553719714	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDKN2A	E2F1	0.5747962723400488	0.3642221495741153	Tendency towards co-occurrence
+CDKN2A	E2F2	1	Infinity	Tendency towards co-occurrence
+CDKN2A	E2F3	0.8099173553719714	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	E2F4	0.654683195592242	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	E2F5	0.8099173553719714	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	E2F6	0.654683195592242	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	E2F7	0.680288368877889	-0.1678808726391603	Tendency towards mutual exclusivity
+CDKN2A	E2F8	0.5747962723400488	0.3642221495741153	Tendency towards co-occurrence
+CDKN2A	SRC	0.8099173553719714	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	JAK1	0.6025411267204258	-0.3610133455373305	Tendency towards mutual exclusivity
+CDKN2A	JAK2	0.24044804204326017	1.1038893457689534	Tendency towards co-occurrence
+CDKN2A	STAT1	0.34531680440771234	1.483668525145067	Tendency towards co-occurrence
+CDKN2A	STAT2	0.5747962723400488	0.3642221495741153	Tendency towards co-occurrence
+CDKN2A	STAT3	0.5281477880409028	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	STAT5A	0.654683195592242	-Infinity	Tendency towards mutual exclusivity
+CDKN2A	STAT5B	0.8099173553719714	-Infinity	Tendency towards mutual exclusivity
+CDKN2B	MYC	1	Infinity	Tendency towards co-occurrence
+CDKN2B	CDKN1A	1	Infinity	Tendency towards co-occurrence
+CDKN2B	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F1	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F2	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F3	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F4	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F5	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F6	1	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F7	1.0000000000001137	Infinity	Tendency towards co-occurrence
+CDKN2B	E2F8	1	Infinity	Tendency towards co-occurrence
+CDKN2B	SRC	1	Infinity	Tendency towards co-occurrence
+CDKN2B	JAK1	1	Infinity	Tendency towards co-occurrence
+CDKN2B	JAK2	1	Infinity	Tendency towards co-occurrence
+CDKN2B	STAT1	1	Infinity	Tendency towards co-occurrence
+CDKN2B	STAT2	1	Infinity	Tendency towards co-occurrence
+CDKN2B	STAT3	1	Infinity	Tendency towards co-occurrence
+CDKN2B	STAT5A	1	Infinity	Tendency towards co-occurrence
+CDKN2B	STAT5B	1	Infinity	Tendency towards co-occurrence
+MYC	CDKN1A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+MYC	CDKN1B	1	Infinity	Tendency towards co-occurrence
+MYC	E2F1	0.06528925619834969	3.654977902438255	Tendency towards co-occurrence
+MYC	E2F2	1	Infinity	Tendency towards co-occurrence
+MYC	E2F3	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+MYC	E2F4	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+MYC	E2F5	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+MYC	E2F6	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+MYC	E2F7	0.09710743801654134	3.126760535960395	Tendency towards co-occurrence
+MYC	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+MYC	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+MYC	JAK1	0.11280991735537638	2.9356283494842854	Tendency towards co-occurrence
+MYC	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+MYC	STAT1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+MYC	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+MYC	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+MYC	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+MYC	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	CDKN1B	1	Infinity	Tendency towards co-occurrence
+CDKN1A	E2F1	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	E2F2	1	Infinity	Tendency towards co-occurrence
+CDKN1A	E2F3	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	E2F4	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	E2F5	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	E2F7	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+CDKN1A	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+CDKN1B	E2F1	1	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F2	1	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F3	1	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F4	1	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F5	1	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F6	1	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F7	1.0000000000001137	Infinity	Tendency towards co-occurrence
+CDKN1B	E2F8	1	Infinity	Tendency towards co-occurrence
+CDKN1B	SRC	1	Infinity	Tendency towards co-occurrence
+CDKN1B	JAK1	1	Infinity	Tendency towards co-occurrence
+CDKN1B	JAK2	1	Infinity	Tendency towards co-occurrence
+CDKN1B	STAT1	1	Infinity	Tendency towards co-occurrence
+CDKN1B	STAT2	1	Infinity	Tendency towards co-occurrence
+CDKN1B	STAT3	1	Infinity	Tendency towards co-occurrence
+CDKN1B	STAT5A	1	Infinity	Tendency towards co-occurrence
+CDKN1B	STAT5B	1	Infinity	Tendency towards co-occurrence
+E2F1	E2F2	1	Infinity	Tendency towards co-occurrence
+E2F1	E2F3	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+E2F1	E2F4	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F1	E2F5	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+E2F1	E2F6	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F1	E2F7	0.1862264446330396	2.0104486701928845	Tendency towards co-occurrence
+E2F1	E2F8	0.8726718310240545	-Infinity	Tendency towards mutual exclusivity
+E2F1	SRC	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+E2F1	JAK1	0.7854683882237564	-Infinity	Tendency towards mutual exclusivity
+E2F1	JAK2	0.8428368966301313	-Infinity	Tendency towards mutual exclusivity
+E2F1	STAT1	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F1	STAT2	0.8726718310240545	-Infinity	Tendency towards mutual exclusivity
+E2F1	STAT3	0.9032918952704871	-Infinity	Tendency towards mutual exclusivity
+E2F1	STAT5A	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F1	STAT5B	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+E2F2	E2F3	1	Infinity	Tendency towards co-occurrence
+E2F2	E2F4	1	Infinity	Tendency towards co-occurrence
+E2F2	E2F5	1	Infinity	Tendency towards co-occurrence
+E2F2	E2F6	1	Infinity	Tendency towards co-occurrence
+E2F2	E2F7	1.0000000000001137	Infinity	Tendency towards co-occurrence
+E2F2	E2F8	1	Infinity	Tendency towards co-occurrence
+E2F2	SRC	1	Infinity	Tendency towards co-occurrence
+E2F2	JAK1	1	Infinity	Tendency towards co-occurrence
+E2F2	JAK2	1	Infinity	Tendency towards co-occurrence
+E2F2	STAT1	1	Infinity	Tendency towards co-occurrence
+E2F2	STAT2	1	Infinity	Tendency towards co-occurrence
+E2F2	STAT3	1	Infinity	Tendency towards co-occurrence
+E2F2	STAT5A	1	Infinity	Tendency towards co-occurrence
+E2F2	STAT5B	1	Infinity	Tendency towards co-occurrence
+E2F3	E2F4	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F3	E2F5	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+E2F3	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F3	E2F7	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+E2F3	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+E2F3	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+E2F3	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+E2F3	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+E2F3	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F3	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+E2F3	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+E2F3	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F3	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+E2F4	E2F5	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F4	E2F6	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+E2F4	E2F7	0.902892561983517	-Infinity	Tendency towards mutual exclusivity
+E2F4	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F4	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F4	JAK1	0.8871900826447561	-Infinity	Tendency towards mutual exclusivity
+E2F4	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+E2F4	STAT1	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+E2F4	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F4	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+E2F4	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+E2F4	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F5	E2F6	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F5	E2F7	0.9504132231406097	-Infinity	Tendency towards mutual exclusivity
+E2F5	E2F8	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+E2F5	SRC	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+E2F5	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+E2F5	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+E2F5	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F5	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+E2F5	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+E2F5	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F5	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+E2F6	E2F7	0.902892561983517	-Infinity	Tendency towards mutual exclusivity
+E2F6	E2F8	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F6	SRC	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F6	JAK1	0.8871900826447561	-Infinity	Tendency towards mutual exclusivity
+E2F6	JAK2	0.9187327823692022	-Infinity	Tendency towards mutual exclusivity
+E2F6	STAT1	0.03292011019283206	4.770684624465665	Tendency towards co-occurrence(Significant)
+E2F6	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F6	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+E2F6	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+E2F6	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+E2F7	E2F8	0.8137735553669291	-Infinity	Tendency towards mutual exclusivity
+E2F7	SRC	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+E2F7	JAK1	0.3060885665485622	1.2901505005669884	Tendency towards co-occurrence
+E2F7	JAK2	0.22795842183136034	1.713797927758343	Tendency towards co-occurrence
+E2F7	STAT1	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+E2F7	STAT2	0.8137735553669291	-Infinity	Tendency towards mutual exclusivity
+E2F7	STAT3	0.8573685672615547	-Infinity	Tendency towards mutual exclusivity
+E2F7	STAT5A	0.9028925619834144	-Infinity	Tendency towards mutual exclusivity
+E2F7	STAT5B	0.9504132231405017	-Infinity	Tendency towards mutual exclusivity
+E2F8	SRC	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+E2F8	JAK1	0.21453161177624405	1.8191584434161694	Tendency towards co-occurrence
+E2F8	JAK2	0.15716310336995304	2.24248116892434	Tendency towards co-occurrence
+E2F8	STAT1	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F8	STAT2	0.8726718310240545	-Infinity	Tendency towards mutual exclusivity
+E2F8	STAT3	0.9032918952704871	-Infinity	Tendency towards mutual exclusivity
+E2F8	STAT5A	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+E2F8	STAT5B	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+SRC	JAK1	0.9421487603305158	-Infinity	Tendency towards mutual exclusivity
+SRC	JAK2	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+SRC	STAT1	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+SRC	STAT2	0.9669421487603562	-Infinity	Tendency towards mutual exclusivity
+SRC	STAT3	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+SRC	STAT5A	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+SRC	STAT5B	0.9917355371900849	-Infinity	Tendency towards mutual exclusivity
+JAK1	JAK2	0.26152544696910524	1.5224265354444706	Tendency towards co-occurrence
+JAK1	STAT1	0.11280991735536354	2.9356283494842854	Tendency towards co-occurrence
+JAK1	STAT2	0.7854683882237564	-Infinity	Tendency towards mutual exclusivity
+JAK1	STAT3	0.8350024307244328	-Infinity	Tendency towards mutual exclusivity
+JAK1	STAT5A	0.8871900826445543	-Infinity	Tendency towards mutual exclusivity
+JAK1	STAT5B	0.9421487603306228	-Infinity	Tendency towards mutual exclusivity
+JAK2	STAT1	0.08126721763085386	3.3586377672433594	Tendency towards co-occurrence
+JAK2	STAT2	0.8428368966300355	-Infinity	Tendency towards mutual exclusivity
+JAK2	STAT3	0.11986943537747106	2.6567569067146595	Tendency towards co-occurrence
+JAK2	STAT5A	0.9187327823690977	-Infinity	Tendency towards mutual exclusivity
+JAK2	STAT5B	0.9586776859504682	-Infinity	Tendency towards mutual exclusivity
+STAT1	STAT2	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+STAT1	STAT3	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+STAT1	STAT5A	0.9670798898070625	-Infinity	Tendency towards mutual exclusivity
+STAT1	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
+STAT2	STAT3	0.9032918952704871	-Infinity	Tendency towards mutual exclusivity
+STAT2	STAT5A	0.934710743801623	-Infinity	Tendency towards mutual exclusivity
+STAT2	STAT5B	0.9669421487602463	-Infinity	Tendency towards mutual exclusivity
+STAT3	STAT5A	0.9508264462810327	-Infinity	Tendency towards mutual exclusivity
+STAT3	STAT5B	0.9752066115702662	-Infinity	Tendency towards mutual exclusivity
+STAT5A	STAT5B	0.9834710743801591	-Infinity	Tendency towards mutual exclusivity
