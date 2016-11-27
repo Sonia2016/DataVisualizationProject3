@@ -29,6 +29,7 @@ We want to work just 4 studies (related to Melanoma: one of us has family histor
 - [ ] Complete the data obtaining from the webpage - Jeff
 - [ ] Working on how to visualize the data related to the each study (which/how) - Maede
 - [ ] Find the criteria for visualizing the gene interaction and network of them - Sonia
+
 ##### Next meeting Monday 28th 4:30pm
 
 
@@ -60,5 +61,20 @@ We want to work just 4 studies (related to Melanoma: one of us has family histor
   2. The service objects use Promises to defer execution until the web api calls return; these are supported by Chrome.
   3. Next up will be to add the remaining api calls so we can pull the rest of the data as needed.
 
-
+- Maede
+  I did some study of the structure of data we have and the template that the professor gave us and found the following:
+ 1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by <em>Hugo gene symbol<em> or <em>gene aliases<em>.
+ 2. Whatever we have in the network template of professor is not gene name or alias, but ....
+ 3. What we have to do is to 
+  1) start from "data_mutations_extended" get the genes involved in that study
+	2) put all the gene names in the search box
+ 	3) The linkes in the network corresponds to the number of times two gene appear together in on study
+ 	4) assume we have selected two related genes, then when we click on one of the genes 
+ 		- a drop down list should appear and we have to select a "numeric" parameter (from data_mutations_extended : e.g. Chromosome, start position ..)
+ 		- we have to show the value of that parameter in different studies.
+ 		- when clicked on a study we show the related information in the study i.e. the file "study_view_clinical_data"
+ 			parameters like cancer type, age of the patients, gender, sample size, ....
+ 		
+ 4. We can also start from study and go to gene. For example we will have a drop down list containng the studies. when we click on a study
+ 	we see a graph containing the gene names and their mutation number.
 
