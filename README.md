@@ -62,6 +62,7 @@ We want to work just 4 studies (related to Melanoma: one of us has family histor
   3. Next up will be to add the remaining api calls so we can pull the rest of the data as needed.
 
 - Maede
+
   I did some study of the structure of data we have and the template that the professor gave us and found the following:
  1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by <em>Hugo gene symbol<em> or <em>gene aliases<em>.
  2. Whatever we have in the network template of professor is not gene name or alias, but ....
