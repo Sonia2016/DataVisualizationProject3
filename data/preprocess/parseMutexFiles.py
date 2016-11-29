@@ -39,7 +39,7 @@ def convertToJson(toPath, fromPathList, linesToSkip=0, commentChars=['#']):
         entries = parseFile(fromPath, source, linesToSkip, commentChars)
         data = data + entries
     with open(toPath, "w") as out:
-        json.dump(data, out, sort_keys=True, separators=(',',':'), ensure_ascii=False)
+        json.dump(data, out, sort_keys=True, separators=(',',':'), ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':
     convertToJson("../mutEx.json", 
