@@ -26,12 +26,27 @@ Each of us was working on the understanding the concept related to the cancer to
 According too much work and not understandable data in this webpage we decided to determine our work by our preference.
 We want to work just 4 studies (related to Melanoma: one of us has family history about this disease) and we decided to partition our work in parallel.
 
-- [ ] Complete the data obtaining from the webpage - Jeff
-- [ ] Working on how to visualize the data related to the each study (which/how) - Maede
-- [ ] Find the criteria for visualizing the gene interaction and network of them - Sonia
+- [X] Complete the data obtaining from the webpage - Jeff
+- [X] Working on how to visualize the data related to the each study (which/how) - Maede
+- [X] Find the criteria for visualizing the gene interaction and network of them - Sonia
 
 ##### Next meeting Monday 28th 4:30pm
 
+### Forth Meeting - November 28th
+We discussed according to how to represent the gene interaction. With discussion with Dr. Dang we figured out we shouldn't wory about the gene networks. We should just work on the study and related gene in those studies.
+
+- [X] Wokring on the data - Jeff
+- [X] Working on parallel cordinate for each study - Maede
+- [X] Working on the basic template to understand how to work on that and also work with the gene data - Sonia
+
+##### Next meeting Monday 30th 4:30pm
+
+### Fifth Meeting - November 30th
+We talked and prepared the first draft of our visualization and made decision to work on which data/categories/studies.
+
+- [ ] Finalize the data in webservice - Jeff
+- [ ] Working on parallel cordinate for each study - Maede
+- [ ] Working with gene detail/ location of the gene/ statistics of the special gene on four studies- Sonia
 
 ###### Action List
 - Sonia
