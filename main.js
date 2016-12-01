@@ -46,3 +46,15 @@ $("#geneList").on("click", function () {
 $("#mutExData").on("click", function () {
     dataService().getMutExData().then(onGetMutExDataComplete, onError);
 });
+
+$("#allStudyData").on("click", function () {
+    var studyId = "skcm_yale";
+    var caseSetId = studyId + "_all";
+    var geneticProfileId = studyId + "_mutations";
+    var geneList = "CFTR,TG,TLR7,GPRC6A,TP53,GLI2,NOD2,TPO,TLR3,APC,MARCO,FGF9,E2F1,CIITA,GC,ABCA1,PLA2G3";
+    var p1 = dataService().getClinicalData(caseSetId);
+    var p2 = dataService().getExtendedMutationData(caseSetId, geneticProfileId, geneList);
+    Promise.all([p1, p2]).then(values => {
+        console.log(values);
+    });
+})
