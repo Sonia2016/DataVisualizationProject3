@@ -1,60 +1,68 @@
-var onGetDataComplete = function (data) {
-    data.forEach(function (datum) {
-        $("body").append("<div class='col-md-2'>" + datum.cancer_study_id + "</div>");
-    });
-};
-
-var onGetGeneListComplete = function (data) {
-    data.forEach(function (datum) {
-        $("body").append("<div class='col-md-2'>" + datum.geneId + "</div>");
-    });
-};
-
-var onGetMutExDataComplete = function (data) {
-    $("body").append("<div class='row'>");
-    $("body").append("<div class='col-md-1'>Source</div>");
-    $("body").append("<div class='col-md-1'>Gene A</div>");
-    $("body").append("<div class='col-md-1'>Gene B</div>");
-    $("body").append("<div class='col-md-2'>p-Value</div>");
-    $("body").append("<div class='col-md-2'>Log Odds Ratio</div>");
-    $("body").append("<div class='col-md-5'>Association</div>");
-    $("body").append("</div>")
-    data.forEach(function (datum) {
-        $("body").append("<div class='row'>");
-        $("body").append("<div class='col-md-1'>" + datum.source + "</div>");
-        $("body").append("<div class='col-md-1'>" + datum.geneA + "</div>");
-        $("body").append("<div class='col-md-1'>" + datum.geneB + "</div>");
-        $("body").append("<div class='col-md-2'>" + datum.pValue + "</div>");
-        $("body").append("<div class='col-md-2'>" + datum.logOddsRatio + "</div>");
-        $("body").append("<div class='col-md-5'>" + datum.association + "</div>");
-        $("body").append("</div>")
-    });
-};
-
-var onError = function (reason) {
-    var thisError = "Error";
-};
-
-$("#cancerStudies").on("click", function () {
-    dataService().getCancerStudies().then(onGetDataComplete, onError);
-});
-
-$("#geneList").on("click", function () {
-    dataService().getGeneList().then(onGetGeneListComplete, onError);
-});
-
-$("#mutExData").on("click", function () {
-    dataService().getMutExData().then(onGetMutExDataComplete, onError);
-});
-
-$("#allStudyData").on("click", function () {
-    var studyId = "skcm_yale";
-    var caseSetId = studyId + "_all";
-    var geneticProfileId = studyId + "_mutations";
+(function () {
+    var studyIds = ["skcm_yale", "skcm_tcga", "skcm_broad", "skcm_broad_dfarber"];
     var geneList = "CFTR,TG,TLR7,GPRC6A,TP53,GLI2,NOD2,TPO,TLR3,APC,MARCO,FGF9,E2F1,CIITA,GC,ABCA1,PLA2G3";
-    var p1 = dataService().getClinicalData(caseSetId);
-    var p2 = dataService().getExtendedMutationData(caseSetId, geneticProfileId, geneList);
-    Promise.all([p1, p2]).then(values => {
-        console.log(values);
+
+    var onError = function (reason) {
+        var thisError = "Error";
+    };
+
+    var onGetCancerStudiesComplete = function (data) {
+        data.forEach(function (datum) {
+            console.log(datum);
+        });
+    };
+
+    $("#cancerStudies").on("click", function () {
+        dataService().getCancerStudies().then(onGetCancerStudiesComplete, onError);
     });
-})
+
+    var onGetGeneListComplete = function (data) {
+        data.forEach(function (datum) {
+            console.log(datum);
+        });
+    };
+
+    $("#geneList").on("click", function () {
+        dataService().getGeneList().then(onGetGeneListComplete, onError);
+    });
+
+    var onGetMutExDataComplete = function (data) {
+        data.forEach(function (datum) {
+            console.log(datum);
+        });
+    };
+
+    $("#mutExData").on("click", function () {
+        dataService().getMutExData().then(onGetMutExDataComplete, onError);
+    });
+
+    var onGetAllExtendedMutationDataComplete = function (valueArrays) {
+        var results = [];
+        valueArrays.forEach(function (valueArray) {
+            results = results.concat(valueArray);
+        })
+        results.forEach(function (result) {
+            console.log(result);
+        });
+    };
+
+    $("#allExtendedMutationData").on("click", function () {
+        var promises = dataService().getAllExtendedMutationData(studyIds, geneList);
+        Promise.all(promises).then(onGetAllExtendedMutationDataComplete, onError);
+    });
+
+    var onGetAllClinicalDataComplete = function (valueArrays) {
+        var results = [];
+        valueArrays.forEach(function (valueArray) {
+            results = results.concat(valueArray);
+        })
+        results.forEach(function (result) {
+            console.log(result);
+        });
+    };
+
+    $("#allClinicalData").on("click", function () {
+        var promises = dataService().getAllClinicalData(studyIds);
+        Promise.all(promises).then(onGetAllClinicalDataComplete, onError);
+    });
+})();

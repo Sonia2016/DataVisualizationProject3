@@ -155,6 +155,35 @@ var dataService = function () {
         };
     };
 
+    var allExtendedMutationDataService = function () {
+        return {
+            getData: function (studyIds, geneList) {
+                var promises = [];
+                studyIds.forEach(function (studyId) {
+                    var caseSetId = studyId + "_all";
+                    var geneticProfileId = studyId + "_mutations";
+                    var promise = extendedMutationDataService().getData(caseSetId, geneticProfileId, geneList);
+                    promises.push(promise);
+                });
+                return promises;
+            }
+        };
+    };
+
+    var allClinicalDataService = function () {
+        return {
+            getData: function (studyIds) {
+                var promises = [];
+                studyIds.forEach(function (studyId) {
+                    var caseSetId = studyId + "_all";
+                    var promise = clinicalDataService().getData(caseSetId);
+                    promises.push(promise);
+                });
+                return promises;
+            }
+        };
+    };
+
     return {
         getTypesOfCancer: typesOfCancerService().getData,
         getCancerStudies: cancerStudiesService().getData,
@@ -166,7 +195,9 @@ var dataService = function () {
         getProteinArrayInfo: proteinArrayInfoService().getData,
         getProteinArrayData: proteinArrayDataService().getData,
         getGeneList: geneFileService().getData,
-        getMutExData: mutExFileService().getData
+        getMutExData: mutExFileService().getData,
+        getAllExtendedMutationData: allExtendedMutationDataService().getData,
+        getAllClinicalData: allClinicalDataService().getData
     };
 };
 
