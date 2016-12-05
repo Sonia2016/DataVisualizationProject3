@@ -1,96 +1,36 @@
-# DataVisualizationProject3
-Project 3: Network visualization
+## BioLinker: Bottom-up Exploration of Protein Interaction Networks
+Please click to watch the overview video.
+[![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/TeaserVideo.png)](http://www2.cs.uic.edu/~tdang/BioLinker/BioLinker.mp4)
 
-### First Meeting - November 18th
-#### Check the problem definition
-We check the cbioportal webpage for obtaining the data.
-In data set tab, we open the one of the cancer studies and after that downloaded the data "Download Data". In that folder we need the file called "data_mutations_extended.txt".
+Please find our manuscript submitted to the [6th IEEE Symposium on Biological Data Visualization](http://biovis.net/2016/index.html) (BioVis 2016) [here](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Dang2016BioLinker.pdf).
 
-- [X] Check how to connect to the web application and obtain related data to the specific study
-- [X] Reading the study and figure out which information (Maede and Sonia)
-  1. Gene
-  2. Study or disease
-    1. which info in those studies are important such as gender
-- [ ] Decide which types of visualization do we want to select (pie, plot, ...) (at this step - Maede and Sonia)
+Try BioLinker [Web demo](http://www2.cs.uic.edu/~tdang/BioLinker/).
 
-##### Next meeting Monday 21st 2:30pm
-
-### Second Meeting - November 21st
-Discuss about what we did and deliever what we done so far, you can check them in our action list
-
-##### Next meeting Friday 25th 2:00pm
+BioLinker is an interactive visualization system that helps users to perform bottom-up exploration of complex protein interaction networks. Five interconnected views provide the user with a range of ways to explore pathway data: Overview/ protein selector, context view, main view, publication view, and conflict matrix.  
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure1.png)
 
 
-### Third Meeting - November 25th
-Each of us was working on the understanding the concept related to the cancer to how to visualize the most important of them.
-According too much work and not understandable data in this webpage we decided to determine our work by our preference.
-We want to work just 4 studies (related to Melanoma: one of us has family history about this disease) and we decided to partition our work in parallel.
+### 1) Overview / Protein Selector:
+This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure2.png)
 
-- [X] Complete the data obtaining from the webpage - Jeff
-- [X] Working on how to visualize the data related to the each study (which/how) - Maede
-- [X] Find the criteria for visualizing the gene interaction and network of them - Sonia
+### 2) Main View:
+In this view, node (protein) sizes are computed based on the number of direct neighbors. Edges (index cards) are color-encoded by interaction types. BioLinker supports finding paths between selected proteins. The following figure shows an example. Users specify source, target, and the maximum number of hops in between source and target. BioLinker displays all possible paths under that condition. Source node is pinned to the left while target node is pinned to the right of the visualization. The shortest path from *PIK3CA* to *TRAF6* goes through two hops *Akt* and *NF-kappaB*. In this example, we also overlay cancer genomics data onto the network: purple nodes are proteins with high copy number alteration in the Bladder Urothelial Carcinoma study (TCGA, Nature 2014). BioLinker accesses this cancer study on [cBioPortal](http://www.cbioportal.org/) through its web service interface.
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure4.png)
 
-##### Next meeting Monday 28th 4:30pm
+### 3) Context View:
+Systems biologists and cancer researchers are frequently interested in understanding the contexts of biochemical reactions and comparing protein interaction sub-networks by context. The top left panel in the next figure shows the context view for the network in the main view (top right panel). In particular, we show a 2-degree separation network of a selected protein *antigen* which is located in the center of the main view. The lower panel depicts brushing and linking of two views. We have selected *mouse* in the *species* category. Other context categories are updated accordingly. In the main view (on the bottom right), we notice that all protein interactions in *mouse* are between *antigen* and its immediate neighbors, but not the second degree separated neighbors.  
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure5.png)
 
-### Forth Meeting - November 28th
-We discussed according to how to represent the gene interaction. With discussion with Dr. Dang we figured out we shouldn't wory about the gene networks. We should just work on the study and related gene in those studies.
+### 4) Publication View:
+We use [TimeArcs visualization](https://github.com/CreativeCodingLab/TimeArcs) to show the discoveries of these index cards by publication year. A request to load relevant publications for new index cards is sent to the PMC publication database on our server every time the protein network is expanded. The next Fig.(b) shows an example of publication view of the graph in Fig.(a). In particular, time axis goes from left (2004) to right (2012). An arc connects two proteins/complexes at a particular time (based on when the interaction was discovered/ publication year). The colors encode interaction types, such as green for *increase_activity*, red for *decrease_activity*, orange for *translocation*, and blue for *binds*. As depicted in Fig.(c), mousing over an arcs display publication data associated to an index card, such as paper title, authors' names, authors' contacts, affiliations, publication year, journal name, and external link. Users can go to the actual paper by a clicking on the provided link.
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure6.png)
 
-- [X] Wokring on the data - Jeff
-- [X] Working on parallel cordinate for each study - Maede
-- [X] Working on the basic template to understand how to work on that and also work with the gene data - Sonia
+### 5) Conflict Matrix:
+We use an [comparator script](https://github.com/PathwayCommons/pathway-cards/blob/master/comparator/src/main/scripts/IndexCardComparator.js) to detect potential conflicts between index cards in the main view. For example, we select *TGF-beta* as protein of interest and iteratively expand the network around this protein. The index card comparison results are presented in form of an adjacency matrix. In each cell, we draw an arc symbol for each interaction (colored by type) of the two participating index cards. Cells with orange background contain two index cards with potential conflict as depicted in the left panel of Fig.(a). In Fig.(b), we inspect a potential conflict cell in the matrix (left). Two corresponding index cards are highlighted in the publication view (right). We can see that the two index cards have the same participants (*TGF-beta* and *Smad7*), but opposite interaction types (*increase_activity* versus *decrease_activity*). This indicates conflicting knowledge obtained from two different publications in 2010 and 2011. We can look further into details of publication data for each index card to verify these conflicting information as shown in Fig.(c). 
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure7.png)
 
-##### Next meeting Monday 30th 4:30pm
+### Acknowledgments
+This work was funded by the DARPA Big Mechanism Program under ARO contract WF911NF-14-1-0395.
 
-### Fifth Meeting - November 30th
-We talked and prepared the first draft of our visualization and made decision to work on which data/categories/studies.
-
-- [ ] Finalize the data in webservice - Jeff
-- [ ] Working on parallel cordinate for each study - Maede
-- [ ] Working with gene detail/ location of the gene/ statistics of the special gene on four studies- Sonia
-
-###### Action List
-- Sonia
-  1. I was comparing this two studies
-    1. http://www.cbioportal.org/study?id=brca_metabric#summary
-      1. it has 2509 patients
-    2. http://www.cbioportal.org/study?id=brca_tcga_pub2015#summary
-      1. It has 114 patients
-  2. By comparing these two studies and browsing the data related to each of them I figured out they have multiple differences such as:
-    1.  CNA data (second)
-    2.	Cent17 (second)
-    3.	HER2 status (first)
-    4.	Neoplasm disease stage American joint community code (second)
-    5.	Neoplasm histologic grade (first)
-  3. Therefore, we can conclude that different studies have different domain for comparison and they consider different factor for their studies. The good news is that, we have whole data related to each factor in each study data. 
-  4. Our first goal is that how to represent those data and also how to obtain those information from website (the query)
-  5. The other goal is that we should connect different plot to each other for example
-    1.	Number of mutations, gender, diagnosis age, CNA gene and etc.
-  6. I also checked this paper "Cancer Genome Landscape", but I fortunately I didn't find any similarities between studies and this paper for good understand
-    1. I think we should decide on which type of disease we want to work. Hence, we can focus on the parameters that are important for that disease, and ask questions from experts
-  6. Note
-    1.	Based on the dataset we have 147 different studies 
-    2.	The current template that professor gave us has 126 different studies
-  
-- Jeff
-  1. I was able to begin converting the web api calls from the AngularJS application to pure JavaScript. I've put together a barebones site that includes a call to the method that returns the list of all studies.
-  2. The service objects use Promises to defer execution until the web api calls return; these are supported by Chrome.
-  3. Next up will be to add the remaining api calls so we can pull the rest of the data as needed.
-
-- Maede
-
-  I did some study of the structure of data we have and the template that the professor gave us and found the following:
- 1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by <em>Hugo gene symbol<em> or <em>gene aliases<em>.
- 2. Whatever we have in the network template of professor is not gene name or alias, but ....
- 3. What we have to do is to 
-  1) start from "data_mutations_extended" get the genes involved in that study
-	2) put all the gene names in the search box
- 	3) The linkes in the network corresponds to the number of times two gene appear together in on study
- 	4) assume we have selected two related genes, then when we click on one of the genes 
- 		- a drop down list should appear and we have to select a "numeric" parameter (from data_mutations_extended : e.g. Chromosome, start position ..)
- 		- we have to show the value of that parameter in different studies.
- 		- when clicked on a study we show the related information in the study i.e. the file "study_view_clinical_data"
- 			parameters like cancer type, age of the patients, gender, sample size, ....
- 		
- 4. We can also start from study and go to gene. For example we will have a drop down list containng the studies. when we click on a study
- 	we see a graph containing the gene names and their mutation number.
 

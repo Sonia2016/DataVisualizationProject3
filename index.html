@@ -1,89 +1,500 @@
 <!DOCTYPE html>
-<html lang="en">
+<meta charset="utf-8">
+<style>
+
+body{
+  font: 300 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nodeText {
+  background: #91877b;
+  text-shadow: 0 11px 10 rgba(255, 255, 255, 1);
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-opacity: 0.6;
+}
+.link {
+    stroke: #555;
+    stroke-opacity: .9;
+}
+.linkArc {
+  fill: none;
+}
+.linkArc2 {
+  fill: none;
+}
+
+.node text {
+  font: 9px helvetica;
+}
+
+<!-- For the slider -->
+
+.axis .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.axis .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+.slider .handle {
+  fill: #666;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 1px;
+  cursor: crosshair;
+}
+
+
+h3 {
+    color: #1ABC9C;
+    text-align:center;  
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Helvetica";
+}
+
+/* tooltip */
+.d3-tip {
+  line-height: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "sans-serif";
+  background: rgba(204, 204, 204, 0.96);
+  color: #000;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+/*.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(200, 220, 245, 0.96);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}*/
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 2px;
+    background-color: #fff;
+}
+
+#searchHolder {
+  position:absolute;
+  z-index: 1;
+  top: 12px;
+  left: 10px;
+}
+
+ #overviewHolder {
+  position:absolute;
+  z-index: 0;
+  top: 8px;
+  left: 5px;
+  border: 1px solid rgba(0,0,0, 1);
+  background-color: rgba(240,240,240, 1);
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+.label {
+  font-size: 14px;
+  font-family: "sans-serif";
+  color: #000;
+}
+
+.flex-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flex{
+  flex-basis: 50%;
+}
+
+.flex-1{
+    height:370px;
+    margin-bottom: 20px;
+    flex-basis:100%; 
+    background-color: white;
+}
+
+.flex-2{
+    flex-basis: 40%;
+    background-color: white;
+}
+.flex-3{
+    flex-basis: 60%;
+    background-color: white;
+}
+.flex-4{
+    flex-basis: 60%;
+    background-color: white;
+}
+
+
+//maede
+
+
+.div-inline{
+    display:inline-block;
+}
+
+
+
+
+svg {
+  font: 10px sans-serif;
+}
+
+.background path {
+  fill: none;
+  stroke: #ccc;
+  stroke-opacity: .4;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+  stroke-opacity: .7;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff;
+  cursor: move;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  cursor: move;
+}
+
+.form-group{
+float:right;
+width:250px;
+margin-right:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nodeText {
+  background: #91877b;
+  text-shadow: 0 11px 10 rgba(255, 255, 255, 1);
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-opacity: 0.6;
+}
+.link {
+    stroke: #555;
+    stroke-opacity: .9;
+}
+.linkArc {
+  fill: none;
+}
+.linkArc2 {
+  fill: none;
+}
+
+.node text {
+  font: 9px helvetica;
+}
+
+<!-- For the slider -->
+
+.axis .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.axis .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+.slider .handle {
+  fill: #666;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 1px;
+  cursor: crosshair;
+}
+
+
+h3 {
+    color: #1ABC9C;
+    text-align:center;  
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Helvetica";
+}
+
+/* tooltip */
+.d3-tip {
+  line-height: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "sans-serif";
+  background: rgba(204, 204, 204, 0.96);
+  color: #000;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+/*.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(200, 220, 245, 0.96);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}*/
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 2px;
+    background-color: #fff;
+}
+
+#searchHolder {
+  position:absolute;
+  z-index: 1;
+  top: 12px;
+  left: 10px;
+}
+
+ #overviewHolder {
+  position:absolute;
+  z-index: 0;
+  top: 8px;
+  left: 5px;
+  border: 1px solid rgba(0,0,0, 1);
+  background-color: rgba(240,240,240, 1);
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+.label {
+  font-size: 14px;
+  font-family: "sans-serif";
+  color: #000;
+}
+
+
+
+
+
+/*popup*/
+
+/**/
+
+
+
+</style>
+<body>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>cBioPortal Explorer</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 </head>
+<!-- Success Message -->
 
-<body>
-    <!-- Fixed navbar -->
-    <!--<nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="#">cBioPortal Explorer</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->
 
-    <div class="container" role="main">
+<div class="flex-container">
+<div class="flex flex-1">
+  <div id="container">
+  <div id="searchHolder"  class="searchHolder">
+  <input id="search">
+  <button id="allExtendedMutationData" type="button" onclick="searchNode()">Search</button>
+  <progress value="0" max="100" id="progBar">
+      <span id="downloadProgress">
+          <!-- Your fallback goes here -->
+      </span>
+  </progress>
+  <label id="progUpdate">
+      <!-- Success Message -->
+  </label>
 
-        <div class="page-header">
-            <h1>Service call tests</h1>
-        </div>
-        <p>
-            <button id="cancerStudies" type="button" class="btn btn-primary">Studies</button>
-        </p>
-        <p>
-            <button id="geneList" type="button" class="btn btn-primary">Genes</button>
-        </p>
-        <p>
-            <button id="mutExData" type="button" class="btn btn-primary">Mutual Exclusivity</button>
-        </p>
-        <p>
-            <button id="allExtendedMutationData" type="button" class="btn btn-primary">All Extended Mutation Data</button>
-        </p>
-        <p>
-            <button id="allClinicalData" type="button" class="btn btn-primary">All Clinical Data</button>
-        </p>
+  </div> 
+   
+
+ <div id="overviewHolder"  class="overviewHolder">
+</div> 
+ 
+</div>
+</div>
+<div class="flex flex-2">
+
+  <div id="studyInfo">
+
+
+   
+        
+      
+
+        
+		
+		<div  class="div-inline">
+		<select class="form-control" id="allClinicalData">
+
+			<option value="0">Study 1</option>
+			<option value="1">Study 2</option>
+			<option value="2">Study 3</option>
+			<option value="3">study 4</option>
+		</select>
+		
+		</div>
+		
     </div>
-    <!-- /container -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+</div>
+<div class="flex flex-3">
+<div id="geneInfo" style="height: 20px">
+</div>
+  <div class="flex flex-2">
+  <div class="flex-container" style="width: 500px">
+    <div class="flex flex-2" id="patientListContainer">
+      <table id="example" style="width: 300px">
+        <thead>
+          <tr><th>patient ID</th><th>Study ID</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>   
+  </div>
+  </div>
+  <div class="flex flex-2" id="chart"></div>
+</div>
+<div class="flex flex-4">
+
+
+</div>
+
+</div>
+
+
+<!-- Our scripts -->
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -92,7 +503,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
     <script src="dataService.js"></script>
-    <script src="main.js"></script>
-</body>
+    <script src="ourMain.js"></script>
 
-</html>
+<script src="jquery.dataTables.min.js"></script>
+<script src="jQuery-1.12.3.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<!--<script src="javascripts/d3.v3.min.js"></script>  -->
+<script src="javascripts/fisheye.js"></script>
+
+<script src="myscripts/util.js"></script>
+<script src="myscripts/genomics.js"></script>
+<script src="myscripts/tooltip.js"></script>
+<script src="myscripts/stacking.js"></script>
+<script src="myscripts/sliderRelationship.js"></script>
+<script src="myscripts/streamGraph.js"></script>
+<script src="myscripts/main.js"></script>
+<script src="myscripts/main2.js"></script>
+
+<script type='text/javascript' src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+<link href="styles/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+<script src="myscripts/searchBox.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+</body>
