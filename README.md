@@ -79,7 +79,7 @@ We talked and prepared the first draft of our visualization and made decision to
 - Maede
 
   I did some study of the structure of data we have and the template that the professor gave us and found the following:
- 1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by <em>Hugo gene symbol<em> or <em>gene aliases<em>.
+ 1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by Hugo gene symbol or gene aliases.
  2. Whatever we have in the network template of professor is not gene name or alias, but ....
  3. What we have to do is to 
   1) start from "data_mutations_extended" get the genes involved in that study
