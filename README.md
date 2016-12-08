@@ -108,7 +108,8 @@ studies on skin cutaneous melanoma were selected:
 
 Seventeen genes were selected for our analysis; these genes are represented by the following symbols: 
 
-  |---|---|---|---|---|
+  |Gene|Gene|Gene|Gene|Gene|Gene|
+  |---|---|---|---|---|---|
   | CFTR  | TG     | TLR7 | GPRC6A | TP53 | ABCA1  |
   | GLI2  | NOD2   | TPO  | TLR3   | APC  | PLA2G3 |
   | MARCO | FGF9   | E2F1 | CIITA  | GC   |        |
