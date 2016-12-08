@@ -106,13 +106,11 @@ studies on skin cutaneous melanoma were selected:
   - [Skin Cutaneous Melanoma (TCGA, Provisional)](http://www.cbioportal.org/study?id=skcm_tcga#summary)
   - [Skin Cutaneous Melanoma (Yale, Nat Genet 2012)](http://www.cbioportal.org/study?id=skcm_yale#summary)
 
-Seventeen genes were selected for our analysis; these genes are represented by the following symbols: 
+17 genes were selected for our analysis; these genes are represented by the following symbols: 
 
-|Gene|Gene|Gene|Gene|Gene|Gene|
-|---|---|---|---|---|---|
-| CFTR  | TG     | TLR7 | GPRC6A | TP53 | ABCA1  |
-| GLI2  | NOD2   | TPO  | TLR3   | APC  | PLA2G3 |
-| MARCO | FGF9   | E2F1 | CIITA  | GC   |        |
+CFTR; TG; TLR7; GPRC6A; TP53; GLI2;
+NOD2; TPO; TLR3; APC; MARCO; FGF9;
+E2F1; CIITA; GC; ABCA1; PLA2G3
 
 Data sources within the cBioPortal site included downloadable TSV files and Web API methods.
 
