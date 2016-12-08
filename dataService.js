@@ -142,23 +142,6 @@ var dataService = function () {
         return {
             getData: function () {
                 return httpService().getData("data/genes.json", "json");
-                // return new Promise(function (resolve, reject) {
-                //     var request = new XMLHttpRequest();
-                //     var url = "data/genes.json";
-                //     request.open("GET", url);
-                //     request.responseType = "json";
-                //     request.onload = function () {
-                //         if (request.status === 200) {
-                //             resolve(request.response);
-                //         } else {
-                //             reject(Error('Data didn\'t load successfully; error code:' + request.statusText));
-                //         }
-                //     };
-                //     request.onerror = function () {
-                //         reject(Error('There was a network error.'));
-                //     };
-                //     request.send();
-                // });
             }
         };
     };
@@ -168,6 +151,35 @@ var dataService = function () {
         return {
             getData: function () {
                 return httpService().getData("data/mutEx.json", "json");
+            }
+        };
+    };
+
+    var allExtendedMutationDataService = function () {
+        return {
+            getData: function (studyIds, geneList) {
+                var promises = [];
+                studyIds.forEach(function (studyId) {
+                    var caseSetId = studyId + "_all";
+                    var geneticProfileId = studyId + "_mutations";
+                    var promise = extendedMutationDataService().getData(caseSetId, geneticProfileId, geneList);
+                    promises.push(promise);
+                });
+                return promises;
+            }
+        };
+    };
+
+    var allClinicalDataService = function () {
+        return {
+            getData: function (studyIds) {
+                var promises = [];
+                studyIds.forEach(function (studyId) {
+                    var caseSetId = studyId + "_all";
+                    var promise = clinicalDataService().getData(caseSetId);
+                    promises.push(promise);
+                });
+                return promises;
             }
         };
     };
@@ -183,7 +195,9 @@ var dataService = function () {
         getProteinArrayInfo: proteinArrayInfoService().getData,
         getProteinArrayData: proteinArrayDataService().getData,
         getGeneList: geneFileService().getData,
-        getMutExData: mutExFileService().getData
+        getMutExData: mutExFileService().getData,
+        getAllExtendedMutationData: allExtendedMutationDataService().getData,
+        getAllClinicalData: allClinicalDataService().getData
     };
 };
 
