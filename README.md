@@ -173,8 +173,8 @@ The following diagram illustrates these methods and their dependencies:
 
 ![](docs/WebApiMethods.png)
 
-Our application code includes calls to each of the nine API methods; however, only the getClinicalData and
-getMutationData methods were used ultimately in our visualizations.
+Our application code includes calls to each of the nine API methods; however, only the `getClinicalData` and
+`getMutationData` methods were used ultimately in our visualizations.
 
 To eliminate blocking method calls and increase the responsiveness of our application, our `XMLHttpRequest`
 calls are wrapped in ES6 Promises. This feature is supported by most modern browsers, with the notable
