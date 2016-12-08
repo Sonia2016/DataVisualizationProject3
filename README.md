@@ -132,5 +132,50 @@ For each of the four studies, a file was downloaded from the study's summary pag
   7. Rename the downloaded file `mutex_result [study_id].txt`.
 
 Once the four TSV files were downloaded, they were preprocessed using parseMutexFiles.py. This script parsed
-the files, converted the data into an array of objects, and wrote the objects to `mutEx.json`.
+the files, converted the data into an array of objects, and wrote the objects to `mutEx.json`. Here's a sample
+of the json file contents:
 
+  ```JavaScript
+  [
+    {
+      "association":"Tendency towards co-occurrence",
+      "geneA":"CFTR",
+      "geneB":"TG",
+      "logOddsRatio":"1.062054692934312",
+      "pValue":"0.1093286163078594",
+      "source":"skcm_broad"
+    },
+    {
+      "association":"Tendency towards co-occurrence",
+      "geneA":"CFTR",
+      "geneB":"TLR7",
+      "logOddsRatio":"1.2039728043259361",
+      "pValue":"0.19841657023530174",
+      "source":"skcm_broad"
+    },
+    // ...,
+    {
+      "association":"Tendency towards mutual exclusivity",
+      "geneA":"ABCA1",
+      "geneB":"PLA2G3",
+      "logOddsRatio":"-Infinity",
+      "pValue":"0.9780219780219295",
+      "source":"skcm_yale"
+    }
+  ]
+  ```
+
+### Web API methods
+
+The cBioPortal site provides a number of Web API methods [as described here](http://www.cbioportal.org/web_api.jsp).
+
+The following diagram illustrates these methods and their dependencies:
+
+![](docs/WebApiMethods.png)
+
+Our application code includes calls to each of the nine API methods; however, only the getClinicalData and
+getMutationData methods were used ultimately in our visualizations.
+
+To eliminate blocking method calls and increase the responsiveness of our application, our `XMLHttpRequest`
+calls are wrapped in ES6 Promises. This feature is supported by most modern browsers, with the notable
+exception of IE 11.
