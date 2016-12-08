@@ -94,3 +94,43 @@ We talked and prepared the first draft of our visualization and made decision to
  4. We can also start from study and go to gene. For example we will have a drop down list containng the studies. when we click on a study
  	we see a graph containing the gene names and their mutation number.
 
+## Data description
+
+### cBioPortal sources
+
+The data used for this project were pulled from [the cBioPortal web site](http://www.cbioportal.org/). Four
+studies on skin cutaneous melanoma were selected:
+
+  - [Melanoma (Broad/Dana Farber, Nature 2012)](http://www.cbioportal.org/study?id=skcm_broad_dfarber#summary)
+  - [Skin Cutaneous Melanoma (Broad, Cell 2012)](http://www.cbioportal.org/study?id=skcm_broad#summary)
+  - [Skin Cutaneous Melanoma (TCGA, Provisional)](http://www.cbioportal.org/study?id=skcm_tcga#summary)
+  - [Skin Cutaneous Melanoma (Yale, Nat Genet 2012)](http://www.cbioportal.org/study?id=skcm_yale#summary)
+
+Seventeen genes were selected for our analysis; these genes are represented by the following symbols: 
+
+  | CFTR  | TG     | TLR7 | GPRC6A | TP53 | ABCA1  |
+  | GLI2  | NOD2   | TPO  | TLR3   | APC  | PLA2G3 |
+  | MARCO | FGF9   | E2F1 | CIITA  | GC   |        |
+
+Data sources within the cBioPortal site included downloadable TSV files and Web API methods.
+
+### TSV files
+
+Data representing the genes' mutual exclusivity were obtained in TSV files downloaded from the cBioPortal site.
+For each of the four studies, a file was downloaded from the study's summary page as follows:
+
+  1. Visit the [cBioPortal home page](http://www.cbioportal.org/index.do) and scroll down to the Query tab.
+  2. Select the individual study. (The individual study must be selected, as the options differ when multiple 
+  studies are selected.)
+  3. For Genomic Profiles, select Mutations.
+  4. For Select Patient/Case Set, select Sequenced Tumors.
+  5. For Enter Gene List, select User-defined List and enter the 17 gene symbols.
+      The following screenshot illustrates these options.
+      [ScreenShot](docs/MutualExclusivityQueryOptions.png)
+  6. When the results are displayed, click the Mutual Exclusivity tab, scroll to the end of the page, and
+      click Download Full Result.
+  7. Rename the downloaded file `mutex_result [study_id].txt`.
+
+Once the four TSV files were downloaded, they were preprocessed using parseMutexFiles.py. This script parsed
+the files, converted the data into an array of objects, and wrote the objects to `mutEx.json`.
+
