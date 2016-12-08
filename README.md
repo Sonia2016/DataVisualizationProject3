@@ -126,7 +126,7 @@ For each of the four studies, a file was downloaded from the study's summary pag
   4. For Select Patient/Case Set, select Sequenced Tumors.
   5. For Enter Gene List, select User-defined List and enter the 17 gene symbols.
       The following screenshot illustrates these options.
-      [ScreenShot](docs/MutualExclusivityQueryOptions.png)
+      [!ScreenShot(docs/MutualExclusivityQueryOptions.png)](docs/MutualExclusivityQueryOptions.png)
   6. When the results are displayed, click the Mutual Exclusivity tab, scroll to the end of the page, and
       click Download Full Result.
   7. Rename the downloaded file `mutex_result [study_id].txt`.
