@@ -99,6 +99,15 @@ To eliminate blocking method calls and increase the responsiveness of our applic
 calls are wrapped in ES6 Promises. This feature is supported by most modern browsers, with the notable
 exception of IE 11.
 
+## Patient Information
+As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
+Whenever you select a gene amongst these genes, our application shows:
+
+1. Information related to the each study
+2. Information related to the positions and number of mutation of this gene in patient that has mutation on these gene
+
+
+
 
 ## Group Schedule
 
