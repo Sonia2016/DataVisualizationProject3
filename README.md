@@ -117,7 +117,12 @@ In data set tab, we open the one of the cancer studies and after that downloaded
 ##### Next meeting Monday 21st 2:30pm
 
 ### Second Meeting - November 21st
-Discuss about what we did and deliever what we done so far, you can check them in our action list
+Discuss about what we did and deliever what we done so far, you can check them in our action list.
+We talked and prepared the first draft of our visualization and made decision to work on which data/categories/studies.
+
+- [X] Finalize the data in webservice - Jeff
+- [X] Working on parallel cordinate for each study - Maede
+- [X] Working with gene detail/ location of the gene/ statistics of the special gene on four studies- Sonia
 
 ##### Next meeting Friday 25th 2:00pm
 
@@ -152,13 +157,7 @@ We discussed about the visualization of the data that we already have and check 
 ### Sixth Meeting - December 5th
 We implement the parallel cordianate, scatter plot, and pie chart for visualization of the current data that we have. 
 
-- [X] Linking between scatter plot and parallel cordinate, change the data of scatter plot, and number of females and males in each study
-
-We talked and prepared the first draft of our visualization and made decision to work on which data/categories/studies.
-
-- [X] Finalize the data in webservice - Jeff
-- [X] Working on parallel cordinate for each study - Maede
-- [X] Working with gene detail/ location of the gene/ statistics of the special gene on four studies- Sonia
+- [X] Linking between scatter plot and parallel cordinate, change the data of scatter plot, and number of females and males in each study - Sonia
 
 ###### Some of our Action List
 - Sonia
