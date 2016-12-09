@@ -1,3 +1,7 @@
+# DataVisualizationProject3
+Project 3: Network visualization
+
+
 
 ### 1) Overview / Protein Selector:
 This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
@@ -7,61 +11,7 @@ This panel provides an overview of a subset of millions of index cards in the da
 In this view, node (protein) sizes are computed based on the number of direct neighbors. Edges (index cards) are color-encoded by interaction types. BioLinker supports finding paths between selected proteins. The following figure shows an example. Users specify source, target, and the maximum number of hops in between source and target. BioLinker displays all possible paths under that condition. Source node is pinned to the left while target node is pinned to the right of the visualization. The shortest path from *PIK3CA* to *TRAF6* goes through two hops *Akt* and *NF-kappaB*. In this example, we also overlay cancer genomics data onto the network: purple nodes are proteins with high copy number alteration in the Bladder Urothelial Carcinoma study (TCGA, Nature 2014). BioLinker accesses this cancer study on [cBioPortal](http://www.cbioportal.org/) through its web service interface.
 ![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure4.png)
 
-# DataVisualizationProject3
-Project 3: Network visualization
 
-
-We talked and prepared the first draft of our visualization and made decision to work on which data/categories/studies.
-
-- [ ] Finalize the data in webservice - Jeff
-- [ ] Working on parallel cordinate for each study - Maede
-- [ ] Working with gene detail/ location of the gene/ statistics of the special gene on four studies- Sonia
-
-###### Action List
-- Sonia
-  1. I was comparing this two studies
-    1. http://www.cbioportal.org/study?id=brca_metabric#summary
-      1. it has 2509 patients
-    2. http://www.cbioportal.org/study?id=brca_tcga_pub2015#summary
-      1. It has 114 patients
-  2. By comparing these two studies and browsing the data related to each of them I figured out they have multiple differences such as:
-    1.  CNA data (second)
-    2.	Cent17 (second)
-    3.	HER2 status (first)
-    4.	Neoplasm disease stage American joint community code (second)
-    5.	Neoplasm histologic grade (first)
-  3. Therefore, we can conclude that different studies have different domain for comparison and they consider different factor for their studies. The good news is that, we have whole data related to each factor in each study data. 
-  4. Our first goal is that how to represent those data and also how to obtain those information from website (the query)
-  5. The other goal is that we should connect different plot to each other for example
-    1.	Number of mutations, gender, diagnosis age, CNA gene and etc.
-  6. I also checked this paper "Cancer Genome Landscape", but I fortunately I didn't find any similarities between studies and this paper for good understand
-    1. I think we should decide on which type of disease we want to work. Hence, we can focus on the parameters that are important for that disease, and ask questions from experts
-  6. Note
-    1.	Based on the dataset we have 147 different studies 
-    2.	The current template that professor gave us has 126 different studies
-  
-- Jeff
-  1. I was able to begin converting the web api calls from the AngularJS application to pure JavaScript. I've put together a barebones site that includes a call to the method that returns the list of all studies.
-  2. The service objects use Promises to defer execution until the web api calls return; these are supported by Chrome.
-  3. Next up will be to add the remaining api calls so we can pull the rest of the data as needed.
-
-- Maede
-
-  I did some study of the structure of data we have and the template that the professor gave us and found the following:
- 1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by Hugo gene symbol or gene aliases.
- 2. Whatever we have in the network template of professor is not gene name or alias, but ....
- 3. What we have to do is to 
-  1) start from "data_mutations_extended" get the genes involved in that study
-	2) put all the gene names in the search box
- 	3) The linkes in the network corresponds to the number of times two gene appear together in on study
- 	4) assume we have selected two related genes, then when we click on one of the genes 
- 		- a drop down list should appear and we have to select a "numeric" parameter (from data_mutations_extended : e.g. Chromosome, start position ..)
- 		- we have to show the value of that parameter in different studies.
- 		- when clicked on a study we show the related information in the study i.e. the file "study_view_clinical_data"
- 			parameters like cancer type, age of the patients, gender, sample size, ....
- 		
- 4. We can also start from study and go to gene. For example we will have a drop down list containng the studies. when we click on a study
- 	we see a graph containing the gene names and their mutation number.
 
 ## Data description
 
@@ -204,3 +154,54 @@ We implement the parallel cordianate, scatter plot, and pie chart for visualizat
 
 - [X] Linking between scatter plot and parallel cordinate, change the data of scatter plot, and number of females and males in each study
 
+We talked and prepared the first draft of our visualization and made decision to work on which data/categories/studies.
+
+- [X] Finalize the data in webservice - Jeff
+- [X] Working on parallel cordinate for each study - Maede
+- [X] Working with gene detail/ location of the gene/ statistics of the special gene on four studies- Sonia
+
+###### Some of our Action List
+- Sonia
+  1. I was comparing this two studies
+    1. http://www.cbioportal.org/study?id=brca_metabric#summary
+      1. it has 2509 patients
+    2. http://www.cbioportal.org/study?id=brca_tcga_pub2015#summary
+      1. It has 114 patients
+  2. By comparing these two studies and browsing the data related to each of them I figured out they have multiple differences such as:
+    1.  CNA data (second)
+    2.	Cent17 (second)
+    3.	HER2 status (first)
+    4.	Neoplasm disease stage American joint community code (second)
+    5.	Neoplasm histologic grade (first)
+  3. Therefore, we can conclude that different studies have different domain for comparison and they consider different factor for their studies. The good news is that, we have whole data related to each factor in each study data. 
+  4. Our first goal is that how to represent those data and also how to obtain those information from website (the query)
+  5. The other goal is that we should connect different plot to each other for example
+    1.	Number of mutations, gender, diagnosis age, CNA gene and etc.
+  6. I also checked this paper "Cancer Genome Landscape", but I fortunately I didn't find any similarities between studies and this paper for good understand
+    1. I think we should decide on which type of disease we want to work. Hence, we can focus on the parameters that are important for that disease, and ask questions from experts
+  6. Note
+    1.	Based on the dataset we have 147 different studies 
+    2.	The current template that professor gave us has 126 different studies
+  
+- Jeff
+  1. I was able to begin converting the web api calls from the AngularJS application to pure JavaScript. I've put together a barebones site that includes a call to the method that returns the list of all studies.
+  2. The service objects use Promises to defer execution until the web api calls return; these are supported by Chrome.
+  3. Next up will be to add the remaining api calls so we can pull the rest of the data as needed.
+
+- Maede
+
+  I did some study of the structure of data we have and the template that the professor gave us and found the following:
+ 1. In the data set that we obtain from cbiPortal, in the folder for each study (for example paac_jhu_2014) we have a file called *data_mutations_extended.txt*. The first column in this file is Hugo_Symbol which is another identifier for a gene. A gene is identified either by Hugo gene symbol or gene aliases.
+ 2. Whatever we have in the network template of professor is not gene name or alias, but ....
+ 3. What we have to do is to 
+  1) start from "data_mutations_extended" get the genes involved in that study
+	2) put all the gene names in the search box
+ 	3) The linkes in the network corresponds to the number of times two gene appear together in on study
+ 	4) assume we have selected two related genes, then when we click on one of the genes 
+ 		- a drop down list should appear and we have to select a "numeric" parameter (from data_mutations_extended : e.g. Chromosome, start position ..)
+ 		- we have to show the value of that parameter in different studies.
+ 		- when clicked on a study we show the related information in the study i.e. the file "study_view_clinical_data"
+ 			parameters like cancer type, age of the patients, gender, sample size, ....
+ 		
+ 4. We can also start from study and go to gene. For example we will have a drop down list containng the studies. when we click on a study
+ 	we see a graph containing the gene names and their mutation number.
