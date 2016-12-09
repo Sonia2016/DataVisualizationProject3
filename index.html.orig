@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+  font: 300 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+  font: 300 10px sans-serif;
+}
+
+.nodeText {
+  background: #91877b;
+  text-shadow: 0 11px 10 rgba(255, 255, 255, 1);
+  font: 300 10px sans-serif;
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-opacity: 0.6;
+}
+.link {
+    stroke: #555;
+    stroke-opacity: .9;
+}
+.linkArc {
+  fill: none;
+}
+.linkArc2 {
+  fill: none;
+}
+
+.node text {
+  font: 9px helvetica;
+  font: 300 10px sans-serif;
+}
+
+
+.axis .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.axis .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+.slider .handle {
+  fill: #666;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 1px;
+  cursor: crosshair;
+}
+
+
+h3 {
+    color: #1ABC9C;
+    text-align:center;  
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Helvetica";
+>>>>>>> Final changes
+}
+
+svg{
+    display: block;
+    margin: auto;
+}
+
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003366;
+    position: fixed;
+    top: 0;
+    width: 100%;
+=======
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+>>>>>>> Final changes
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    margin: auto;
+    text-decoration: none;
+}
+
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+}
+
+=======
+ #overviewHolder {
+  position:absolute;
+  z-index: 0;
+  top: 8px;
+  left: 5px;
+  border-radius: 25px;
+  padding: 5px;
+  border: 1px solid rgba(0,0,0, 1);
+  background-color: rgba(240,240,240, 1);
+}
+
+
+.label {
+  font-size: 14px;
+  font-family: "sans-serif";
+  color: #000;
+}
+
+.flex-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+>>>>>>> Final changes
+
+.flex{
+  flex-basis: 50%;
+}
+
+.flex-1{
+    height:370px;
+    margin-bottom: 20px;
+    flex-basis:100%; 
+    background-color: white;
+    /*border-radius: 25px;*/
+    padding: 20px; 
+    /*border: 1px solid #73AD21;*/
+}
+
+.flex-2{
+    flex-basis: 70%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px; 
+    border: 1px solid #73AD21;
+}
+.flex-3{
+    flex-basis: 20%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px; 
+    border: 1px solid #73AD21;
+}
+.flex-4{
+    flex-basis: 60%;
+    background-color: white;
+}
+
+
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+</style>
+<body>
+<ul class="tab">
+  
+</ul>
+ <body onload="legendDemo()">
+ <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="datamaps.world.min.js"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<div class="flex flex-2">
+  
+
+<div align="center">
+<a href="genes.html">
+<img src="melanoma.jpg" title="Melanoma gene Information" style="auto width:128px;height:128px;">
+</a>
+=======
+/*//maede*/
+
+
+.div-inline{
+    display:inline-block;
+}
+
+
+
+svg {
+  font: 6px sans-serif;
+  padding: 10px;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis,
+.frame {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+   fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.cell text {
+  font-weight: bold;
+  text-transform: capitalize;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  cursor: move;
+}
+
+.form-group{
+float:right;
+width:250px;
+margin-right:100px;
+}
+
+.frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+circle {
+  fill-opacity: .5;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+
+
+.nodeText {
+  background: #91877b;
+  text-shadow: 0 11px 10 rgba(255, 255, 255, 1);
+}
+
+.node {
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-opacity: 0.6;
+}
+.link {
+    stroke: #555;
+    stroke-opacity: .9;
+}
+.linkArc {
+  fill: none;
+}
+.linkArc2 {
+  fill: none;
+}
+
+.node text {
+  font: 9px helvetica;
+}
+
+<!-- For the slider -->
+
+.axis .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 5px;
+  stroke-linecap: round;
+}
+
+.axis .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+.slider .handle {
+  fill: #666;
+  stroke: #000;
+  stroke-opacity: .25;
+  stroke-width: 1px;
+  cursor: crosshair;
+}
+
+
+h3 {
+    color: #1ABC9C;
+    text-align:center;  
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Helvetica";
+}
+
+/* tooltip */
+.d3-tip {
+  line-height: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "sans-serif";
+  background: rgba(204, 204, 204, 0.96);
+  color: #000;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+/*.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(200, 220, 245, 0.96);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}*/
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 2px;
+    background-color: #fff;
+}
+
+#searchHolder {
+  position:absolute;
+  z-index: 1;
+  padding: 2px;
+  top: 12px;
+  left: 10px;
+}
+
+ #overviewHolder {
+  position:absolute;
+  padding: 2px;
+  z-index: 0;
+  top: 8px;
+  left: 5px;
+  border: 1px solid rgba(0,0,0, 1);
+  background-color: rgba(240,240,240, 1);
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+.label {
+  font-size: 14px;
+  font-family: "sans-serif";
+  color: #000;
+}
+
+
+
+
+.button {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: gray;
+    width:80px;
+    padding: 1px;
+    height: 18px;
+    background: gainsboro;
+}
+
+.input {
+    background-color: white;
+    border-radius: 25px;
+    padding: 2.5px;
+    border: 1px solid;
+    width:100px;
+    height: 18px;
+}
+
+</style>
+<body>
+<head>
+</head>
+<!-- Success Message -->
+
+
+<div class="flex-container">
+<div class="flex flex-1">
+  <div id="container">
+  <div id="searchHolder"  class="searchHolder">
+  <input class="input" id="search">
+  <button id="allExtendedMutationData" class="button" onclick="searchNode()">Search</button>
+  <label id="progUpdate">
+      <!-- Success Message -->
+  </label>
+
+  </div> 
+   
+
+ <div id="overviewHolder"  class="overviewHolder">
+</div> 
+ 
+>>>>>>> Final changes
+</div>
+<div align="center">
+      <p>Melanoma is the least common but the most deadly skin cancer, accounting for only about 1% of all cases, but the vast majority of skin cancer <b>death</b>.</p>
+      <p>In 2016, it is estimated that there will be <b>76,380</b> new cases of melanoma in the United States and <b>10,130 deaths</b> from the disease.</p>
+</div>
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+<div id="vizcontainer" style="position: relative; width: 600px; height: 5px; margin: 0 auto" >
+<svg></svg>
+</div>
+<script src="legend.js"></script>
+
+<div id="container" style="position: relative; width: 500px; height: 400px; margin: 0 auto"></div>
+<div>
+  <p align="center" style="font-size: 10px"><b>Reference</b></p>
+    <p align="center" style="font-size: 10px">SEER (Surveillance, Epidemiology and End Results) data. seer.cancer.gov.</p>
+    <p align="center" style="font-size: 10px">American Cancer Society. Cancer Facts and Figures 2016. Atlanta: American Cancer Society; 2016.</p>
+  </div>
+</div>
+<script>
+
+
+
+=======
+<div class="flex flex-2">
+
+  
+		
+		<div  class="div-inline">
+		<select class="form-control" id="allClinicalData">
+			<option value="0">skcm_yale</option>
+			<option value="1">skcm_tcga</option>
+			<option value="2">skcm_broad</option>
+			<option value="3">skcm_broad_dfarber</option>
+		</select>
+		
+    <label id="colorby">  Color By: 
+      <select name="select2" id="select2">
+        <option value="0">AGE at Procurement</option>
+        <option value="0">Gender</option>
+        <option value="0">Primary Site</option>
+        <option value="0">Specimen Site</option>
+        <option value="1">AGE</option>
+        <option value="1">Ethnicity</option>
+        <option value="1">Gender</option>
+        <option value="1">Tumor Site</option>
+        <option value="1">Vital Status</option>
+        <option value="2">Age</option>
+        <option value="2">Age at Procurement</option>
+        <option value="2">Gender</option>
+        <option value="2">Primary Site</option>
+        <option value="3">Age</option>
+        <option value="3">Mean Ploidy</option>
+        <option value="3">Primary Site</option>
+        <option value="3">Tumor Purity</option>
+
+      </select>
+  </label>    
+
+		</div>
+    <div>
+		  <div style="display: inline-block;" id="studyInfo"></div>
+      <div style="display: inline-block;" id="scatter"></div>
+    </div>
+    
+>>>>>>> Final changes
+
+d3.csv("Melanoma.csv", function(error, weblog) {
+
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+ 
+  blogs =  d3.keys(weblog[0]).slice(0).map(function(id) {
+    return {
+      id: id,
+      values: weblog.map(function(d) {
+        return {rank: d.Rank, location: d.Country, count:d.standardised};
+      })
+    };
+  });
+
+blogs = blogs[0];
+
+var topLocation = [];
+
+  for(var i = 0 ; i < blogs.values.length; i++){
+    topLocation.push(blogs.values[i].location);
+  }
+ 
+=======
+</div>
+<div class="flex flex-3">
+  <div align="center" id="geneInfo" style="height: 20px"></div>
+  &nbsp;
+  
+  <div align="center" id="chart">
+     <p align="center"> The percent of mutations of this gene in each study</p>
+  </div>
+   <div id="tooltip" class="hidden">
+      <p><b>Study Info</b></p>
+      <p><b>Name: </b><span id="StudyName"></span></p>
+      <p><b>Number of Female: </b><span id="Female"></span></p> 
+      <p><b>Number of Male: </b><span id="Male"></span></p>
+    </div>
+ 
+</div>
+>>>>>>> Final changes
+
+  
+  var countries = Datamap.prototype.worldTopo.objects.world.geometries;
+ 
+
+var freData = {cnt:[]};    
+d3.csv("long.csv", function(error, long) {
+   for(var j=0; j<long.length;j++){
+  for(l in topLocation){
+    if(long[j].name.toLowerCase() == topLocation[l].toLowerCase()){
+      for (var i = 0; i< countries.length; i++){
+        if(long[j].name.toLowerCase() == topLocation[l].toLowerCase()){
+          for (var i = 0; i< countries.length; i++){
+              if(topLocation[l].toLowerCase() == countries[i].properties.name.toLowerCase()|| 
+                  topLocation[l].toLowerCase() == "russia" || topLocation[l].toLowerCase() == "usa" || 
+                  topLocation[l].toLowerCase() == "baghdad" ||
+                  topLocation[l].toLowerCase() == "california" ||
+                  topLocation[l].toLowerCase() == "england" || topLocation[l].toLowerCase() == "europe" ||
+                  topLocation[l].toLowerCase() == "florida" || topLocation[l].toLowerCase() == "london" ||
+                  topLocation[l].toLowerCase() == "middle east" || topLocation[l].toLowerCase() == "new york"||
+                  topLocation[l].toLowerCase() == "paris" || topLocation[l].toLowerCase() == "sydney" ||
+                  topLocation[l].toLowerCase() == "texas" || topLocation[l].toLowerCase() == "washington" ||
+                  topLocation[l].toLowerCase() == "africa" || topLocation[l].toLowerCase()== "wisconsin"||
+                  topLocation[l].toLowerCase() == "wall street" || topLocation[l].toLowerCase()== "virginia"||
+                  topLocation[l].toLowerCase() == "soviet union" || topLocation[l].toLowerCase()== "south carolina" ||
+                  topLocation[l].toLowerCase() == "san francisco" || topLocation[l].toLowerCase()== "pentagon" || 
+                  topLocation[l].toLowerCase() == "pennsylvania" || topLocation[l].toLowerCase()== "ohio" || 
+                  topLocation[l].toLowerCase() == "north carolina" || topLocation[l].toLowerCase()== "new jersey" || 
+                  topLocation[l].toLowerCase() == "new hampshire" || topLocation[l].toLowerCase()== "michigan" || 
+                  topLocation[l].toLowerCase() == "massachusetts" || topLocation[l].toLowerCase()== "los angeles" || 
+                  topLocation[l].toLowerCase() == "iowa" || topLocation[l].toLowerCase()== "illinois" || 
+                  topLocation[l].toLowerCase() == "d.c." || topLocation[l].toLowerCase()== "colorado" || 
+                  topLocation[l].toLowerCase() == "chicago" || topLocation[l].toLowerCase()== "capitol hill" || 
+                  topLocation[l].toLowerCase() == "arizona" || topLocation[l].toLowerCase()== "alaska" || topLocation[l].toLowerCase()== "iran"){
+                  if(blogs.values[l].count<=225){
+                       freData.cnt.push({
+                        name: topLocation[l],
+                        freq: blogs.values[l].count,
+                        fillKey: 'first',
+                         radius: Math.sqrt(blogs.values[l].count)/2,
+                          latitude: long[j].latitude,
+                            longitude: long[j].longitude
+                        })}
+                   else if(blogs.values[l].count>225 && blogs.values[l].count<=250){
+                       freData.cnt.push({
+                              name: blogs.values[l].location,
+                              freq: blogs.values[l].count,
+                              fillKey: 'second',
+                               radius: Math.sqrt(blogs.values[l].count)/2,
+                                latitude: long[j].latitude,
+                                  longitude: long[j].longitude
+                          
+                              })
+                   }
+                   else if(blogs.values[l].count>250 && blogs.values[l].count<= 300){
+                       freData.cnt.push({
+                              name: blogs.values[l].location,
+                              freq: blogs.values[l].count,
+                              fillKey: 'third',
+                               radius: Math.sqrt(blogs.values[l].count)/2,
+                                latitude: long[j].latitude,
+                                  longitude: long[j].longitude
+                          
+                              })
+                   }
+                   else if(blogs.values[l].count>300 || blogs.values[l].count<= 350){
+                     freData.cnt.push({
+                    name: blogs.values[l].location,
+                    freq: blogs.values[l].count,
+                    fillKey: 'forth',
+                     radius: Math.sqrt(blogs.values[l].count)/2,
+                      latitude: long[j].latitude,
+                        longitude: long[j].longitude
+                
+                    })
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+
+
+  var freqMap = new Datamap({
+    element: document.getElementById('container'),
+    scope: 'world',
+    data_width: '10',
+    geographyConfig: {
+        popupOnHover: true,
+        highlightOnHover: true
+    },
+
+    fills: {
+        'first': '#E1BEE7',
+        'second': '#CE93D8',
+        'third': '#AB47BC',
+        'forth': '#8E24AA',
+        defaultFill: '#B7C5C5'
+    }
+});
+
+
+
+var frequencyData = freData.cnt;
+ 
+
+//draw bubbles for frequencyData
+freqMap.bubbles(frequencyData, {
+    popupTemplate: function (geo, data) {
+            return ['<div class="hoverinfo">' +  data.name,
+             '<br/>Rate per 100,000: ' +  data.freq,
+            '</div>'].join('');
+    }
+});
+});
+
+<<<<<<< 27d8556eead60cad9f8c0ad280a9ba5e7b91190e
+
+});
+</script>
+
+<script>
+  function legendDemo() {
+=======
+<!-- Our scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+<script src="dataService.js"></script>
+<script src="ourMain.js"></script>
+<script src="d3pie.min.js"></script>
+
+<script src="jQuery-1.12.3.js"></script>
+>>>>>>> Final changes
+
+  sampleNumerical = [200,250,300,350];
+    sampleThreshold=d3.scale.threshold().domain(sampleNumerical).range(
+      ["#E1BEE7","#CE93D8","#AB47BC","#8E24AA"]);
+  horizontalLegend = d3.svg.legend().units("Freq").cellWidth(45).cellHeight(15).inputScale(sampleThreshold).cellStepping(100);
+
+  d3.select("svg").append("g").attr("transform", "translate(50,70)").attr("class", "legend").call(horizontalLegend);
+
+  sampleCategoricalData = ["Something","Something Else", "Another", "This", "That", "Etc"]
+  sampleOrdinal = d3.scale.category20().domain(sampleCategoricalData);
+
+
+  }
+</script>
+   </body>    
+ </html>
