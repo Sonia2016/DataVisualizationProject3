@@ -99,6 +99,17 @@ To eliminate blocking method calls and increase the responsiveness of our applic
 calls are wrapped in ES6 Promises. This feature is supported by most modern browsers, with the notable
 exception of IE 11.
 
+
+## Cancer selection
+<img width="1234" alt="first page" src="https://cloud.githubusercontent.com/assets/19417775/21061340/8e822288-be11-11e6-9e2b-20419c6e97fe.png">
+
+Different location has different statistics for cancers
+<img width="889" alt="location" src="https://cloud.githubusercontent.com/assets/19417775/21061341/900e97f8-be11-11e6-8d9d-cef984395c01.png">
+
+By pressing on the image you direct to the page that shows you the gene information
+<img width="1082" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21061486/335d5d7c-be12-11e6-858d-08a193ab684a.png">
+
+
 ## Patient Information
 As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
 Whenever you select a gene amongst these genes, our application shows:
