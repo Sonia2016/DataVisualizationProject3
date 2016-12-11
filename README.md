@@ -3,13 +3,7 @@ Project 3: Network visualization
 
 
 
-### 1) Overview / Protein Selector:
-This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
-![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure2.png)
 
-### 2) Main View:
-In this view, node (protein) sizes are computed based on the number of direct neighbors. Edges (index cards) are color-encoded by interaction types. BioLinker supports finding paths between selected proteins. The following figure shows an example. Users specify source, target, and the maximum number of hops in between source and target. BioLinker displays all possible paths under that condition. Source node is pinned to the left while target node is pinned to the right of the visualization. The shortest path from *PIK3CA* to *TRAF6* goes through two hops *Akt* and *NF-kappaB*. In this example, we also overlay cancer genomics data onto the network: purple nodes are proteins with high copy number alteration in the Bladder Urothelial Carcinoma study (TCGA, Nature 2014). BioLinker accesses this cancer study on [cBioPortal](http://www.cbioportal.org/) through its web service interface.
-![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure4.png)
 
 
 
@@ -109,13 +103,50 @@ Different location has different statistics for cancers
 By pressing on the image you direct to the page that shows you the gene information
 <img width="1082" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21061486/335d5d7c-be12-11e6-858d-08a193ab684a.png">
 
+### 1) Overview / Protein Selector:
+This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure2.png)
 
-## Patient Information
 As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
+<img width="1267" alt="select" src="https://cloud.githubusercontent.com/assets/19417775/21077922/29476b60-bf21-11e6-9d67-f219f199890f.png">
+
+### 2) Gene/Protein Networks View:
+In this view, node (protein) sizes are computed based on the number of direct neighbors. Edges (index cards) are color-encoded by interaction types. BioLinker supports finding paths between selected proteins. The following figure shows an example. Users specify source, target, and the maximum number of hops in between source and target. BioLinker displays all possible paths under that condition. Source node is pinned to the left while target node is pinned to the right of the visualization. The shortest path from *PIK3CA* to *TRAF6* goes through two hops *Akt* and *NF-kappaB*. In this example, we also overlay cancer genomics data onto the network: purple nodes are proteins with high copy number alteration in the Bladder Urothelial Carcinoma study (TCGA, Nature 2014). BioLinker accesses this cancer study on [cBioPortal](http://www.cbioportal.org/) through its web service interface.
+![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure4.png)
+After selecting the gene APC you can see the network of these gene
+<img width="1261" alt="genenet" src="https://cloud.githubusercontent.com/assets/19417775/21077923/36ca06da-bf21-11e6-8540-6c1582a4cdcd.png">
+
+## Gene Information
 Whenever you select a gene amongst these genes, our application shows:
 
 1. Information related to the each study
-2. Information related to the positions and number of mutation of this gene in patient that has mutation on these gene
+2. Information related to the positions and number of mutation of this gene in patients that have mutation on these gene
+
+## Parallel Cordinate
+
+## Pie chart
+In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
+<img width="300" alt="piechart-1" src="https://cloud.githubusercontent.com/assets/19417775/21077930/4be1781e-bf21-11e6-9abd-3b2636d3f816.png">
+If you mouse over in each part of the pie chart it shows the corresponding information related to the study itself and percentage of mutation of the selected gene in that study
+<img width="320" alt="piechart-2" src="https://cloud.githubusercontent.com/assets/19417775/21077953/3843c176-bf22-11e6-9074-66e7760f7a58.png">
+If you press the Info button it goes to the anothe webpage that shows you detailed description and information related to the selected gene.
+<img width="752" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21077933/5418d5a4-bf21-11e6-8a38-9b8cfee653c2.png">
+
+## Scatter plot
+By selecting the gene in the scatter plot we have the list of patient in two dimensions of number of mutations and also position (start and end positions) of the selected gene in those patients.
+<img width="906" alt="scatter-parallel-1" src="https://cloud.githubusercontent.com/assets/19417775/21077939/7154e892-bf21-11e6-8bc8-318cfed9795c.png">
+Each patient (sample) related to this gene means has mutation on the selected gene and also this gene can be appeared in different location in his/her chromosome. So, in this plot we are showing the list of patients that have muation on the selected gene by considering the position and number of mutations.
+<img width="336" alt="scatter-1" src="https://cloud.githubusercontent.com/assets/19417775/21077942/a67bbb04-bf21-11e6-8829-094aa9829085.png">
+If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... .
+<img width="850" alt="selectpatient" src="https://cloud.githubusercontent.com/assets/19417775/21077940/9bd150a6-bf21-11e6-8fe9-69b6cc3a29ec.png">
+If you change the study the scatter plot would be updated based on the information of that study for the selected gene. Therefore, we have the list of patients in the selected study based on the selected gene.
+<img width="831" alt="patientparallel" src="https://cloud.githubusercontent.com/assets/19417775/21077980/bbd32576-bf23-11e6-98f5-672b002cddfa.png">
+<img width="814" alt="patientparallel2" src="https://cloud.githubusercontent.com/assets/19417775/21077982/cba4a7ea-bf23-11e6-8914-26642310744f.png">
+#### Claim
+Our first claim was the relation between the position and number of mutation but as you can see in the diagram they are not related so far!
+
+
+
 
 
 
