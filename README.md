@@ -118,7 +118,7 @@ Whenever you select a gene amongst these genes, our application shows:
 In the parallel Coordinate graph we show the information related to each study. Each study has some information about the patient involved in that study. The informations for each study is different in two sense. 1)The patient Id's are different. 2) The parametes are different. For example in one study we have "gender" but not in another. So what we did was to select the more important parameters in each study and show them in parralle coordinates when that study was selected. 
 
 The reason we selected the parrallel coordinate is that the study informtion is more about the demograohy of the study. With this graph we can notice, first of all, the range of each parameters very easily. Second, we can wee some relations between the parametes quite easily. For example in the picture below you ca easilty infer that the higher the age is the lower the mean polidity and vise versa. 
-<img width="300" alt="piechart-1" src="https://cloud.githubusercontent.com/assets/19417775/21077930/4be1781e-bf21-11e6-9abd-3b2636d3f816.png">
+![ScreenShot](https://github.com/Sonia2016/DataVisualizationProject3/figures/pc1.png)
 
 ## Pie chart - Gene information in study 
 In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
