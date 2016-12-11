@@ -114,9 +114,9 @@ Whenever you select a gene amongst these genes, our application shows:
 1. Information related to the each study
 2. Information related to the positions and number of mutation of this gene in patients that have mutation on these gene
 
-## Parallel Cordinate
+## Parallel Cordinate - Study Information
 
-## Pie chart
+## Pie chart - Gene information in study 
 In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
 <img width="300" alt="piechart-1" src="https://cloud.githubusercontent.com/assets/19417775/21077930/4be1781e-bf21-11e6-9abd-3b2636d3f816.png">
 If you mouse over in each part of the pie chart it shows the corresponding information related to the study itself and percentage of mutation of the selected gene in that study
@@ -124,7 +124,7 @@ If you mouse over in each part of the pie chart it shows the corresponding infor
 If you press the Info button it goes to the anothe webpage that shows you detailed description and information related to the selected gene.
 <img width="752" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21077933/5418d5a4-bf21-11e6-8a38-9b8cfee653c2.png">
 
-## Scatter plot
+## Scatter plot - Patient infromation
 By selecting the gene in the scatter plot we have the list of patient in two dimensions of number of mutations and also position (start and end positions) of the selected gene in those patients.
 <img width="906" alt="scatter-parallel-1" src="https://cloud.githubusercontent.com/assets/19417775/21077939/7154e892-bf21-11e6-8bc8-318cfed9795c.png">
 Each patient (sample) related to this gene means has mutation on the selected gene and also this gene can be appeared in different location in his/her chromosome. So, in this plot we are showing the list of patients that have muation on the selected gene by considering the position and number of mutations.
