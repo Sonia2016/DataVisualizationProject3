@@ -344,7 +344,8 @@
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      x.domain(d3.extent(startPos[selected], function(d) { return mutation[d.case_id]; })).nice();
+      //x.domain(d3.extent(startPos[selected], function(d) { return mutation[d.case_id]; })).nice();
+      x.domain([0, d3.max(startPos[selected], function(d) { return mutation[d.case_id]; })]);
       y.domain(d3.extent(startPos[selected], function(d) { return d.startPostion; })).nice();
 
       svg.append("g")
