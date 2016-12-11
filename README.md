@@ -115,10 +115,17 @@ Whenever you select a gene amongst these genes, our application shows:
 2. Information related to the positions and number of mutation of this gene in patients that have mutation on these gene
 
 ## Parallel Coordinate - Study Information
-In the parallel Coordinate graph we show the information related to each study. Each study has some information about the patient involved in that study. The informations for each study is different in two sense. 1)The patient Id's are different. 2) The parametes are different. For example in one study we have "gender" but not in another. So what we did was to select the more important parameters in each study and show them in parralle coordinates when that study was selected. 
+In the parallel Coordinate graph we show the information related to each study. Each study has some information about the patient involved in that study. The informations for each study is different in two sense. 1)The patient Id's are different. 2) The parametes are different. For example in one study we have "gender" but not in another. So what we did was to select the more important parameters in each study and show them in parralle coordinates when that study was selected. The parameters in each study are either numerical or categorical. The color of lines can change based on both numerical and categorical category. If the parameter which is selected for coloring is numerical then the color will change in the range of blue to orange. However if the parameter selected is categorical the color will change categorically because the rangedoes not show any relation between categories any more. The picture below illutrates this. The "Tumor Site" parameter is a categorical parameter and as you see the coloring in it is caegorical. But n the same study if we chose to color by age we see that colors appear in a range
+![ScreenShot](https://github.com/Sonia2016/DataVisualizationProject3/figures/pc2.png)
+
+
+
 
 The reason we selected the parrallel coordinate is that the study informtion is more about the demograohy of the study. With this graph we can notice, first of all, the range of each parameters very easily. Second, we can wee some relations between the parametes quite easily. For example in the picture below you ca easilty infer that the higher the age is the lower the mean polidity and vise versa. 
 ![ScreenShot](https://github.com/Sonia2016/DataVisualizationProject3/figures/pc1.png)
+
+
+
 
 ## Pie chart - Gene information in study 
 In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
