@@ -125,7 +125,7 @@ The reason we selected the parrallel coordinate is that the study informtion is 
 ![ScreenShot](figures/pc1.png)
 
 
-
+The colors in parrallel coordinates is also connected to the colors in the scatterplot which will be explained in the next section. 
 
 ## Pie chart - Gene information in study 
 In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
