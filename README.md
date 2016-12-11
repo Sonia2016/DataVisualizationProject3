@@ -1,11 +1,5 @@
-# DataVisualizationProject3
+# Data Visualization Project 3
 Project 3: Network visualization
-
-
-
-
-
-
 
 ## Data description
 
@@ -95,22 +89,22 @@ exception of IE 11.
 
 
 ## Cancer selection
+We chose to work on the Melanoma skin cancer based on the Melanoma is the least common but the most deadly skin cancer, accounting for only about 1% of all cases, but the vast majority of skin cancer death.
+In 2016, it is estimated that there will be 76,380 new cases of melanoma in the United States and 10,130 deaths from the disease.
 <img width="1234" alt="first page" src="https://cloud.githubusercontent.com/assets/19417775/21061340/8e822288-be11-11e6-9e2b-20419c6e97fe.png">
-
-Different location has different statistics for cancers
+The frequency of cancer can be find in the world map location. And also by mouse over on each bubble you can see the frequency and also name of that location.
 <img width="889" alt="location" src="https://cloud.githubusercontent.com/assets/19417775/21061341/900e97f8-be11-11e6-8d9d-cef984395c01.png">
-
-By pressing on the image you direct to the page that shows you the gene information
+By pressing on the image you direct to the page that shows you more detail about the gene information.
 <img width="1082" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21061486/335d5d7c-be12-11e6-858d-08a193ab684a.png">
 
-### 1) Overview / Protein Selector:
+### Gene/Protein Selector:
 This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
 ![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure2.png)
 
 As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
 <img width="1267" alt="select" src="https://cloud.githubusercontent.com/assets/19417775/21077922/29476b60-bf21-11e6-9d67-f219f199890f.png">
 
-### 2) Gene/Protein Networks View:
+### Gene/Protein Networks View:
 In this view, node (protein) sizes are computed based on the number of direct neighbors. Edges (index cards) are color-encoded by interaction types. BioLinker supports finding paths between selected proteins. The following figure shows an example. Users specify source, target, and the maximum number of hops in between source and target. BioLinker displays all possible paths under that condition. Source node is pinned to the left while target node is pinned to the right of the visualization. The shortest path from *PIK3CA* to *TRAF6* goes through two hops *Akt* and *NF-kappaB*. In this example, we also overlay cancer genomics data onto the network: purple nodes are proteins with high copy number alteration in the Bladder Urothelial Carcinoma study (TCGA, Nature 2014). BioLinker accesses this cancer study on [cBioPortal](http://www.cbioportal.org/) through its web service interface.
 ![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure4.png)
 After selecting the gene APC you can see the network of these gene
