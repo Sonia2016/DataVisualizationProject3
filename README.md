@@ -99,8 +99,6 @@ By pressing on the image you direct to the page that shows you more detail about
 
 ### Gene/Protein Selector:
 This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
-![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure2.png)
-
 As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
 <img width="1267" alt="select" src="https://cloud.githubusercontent.com/assets/19417775/21077922/29476b60-bf21-11e6-9d67-f219f199890f.png">
 
