@@ -84,7 +84,7 @@
                 if(start[x.gene_symbol] == undefined){
                   debugger;
                   var startData = {};
-                  startData.patientId = 0;
+                  startData.patientId = 1;
                   startData.startPostion = x["start_position"];
                   startData.endPostion = x["end_position"];
                   startList.push(startData);
