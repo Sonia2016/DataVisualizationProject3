@@ -97,7 +97,7 @@
         }
     
 
-        var studyIds = ["skcm_yale", "skcm_tcga", "skcm_broad", "skcm_broad_dfarber"];
+        var studyIds = ["Skin Cutaneous Melanoma (Yale, Nat Genet 2012)", "Skin Cutaneous Melanoma (TCGA, Provisional)", "Skin Cutaneous Melanoma (Broad, Cell 2012)", "Melanoma (Broad/Dana Farber, Nature 2012)"];
         var allStudies = {};
          for(var i = 0 ; i < 4 ; i++){
             allStudies[i] = valueArrays[i].filter(Boolean).reduce(function(freq, x) {
