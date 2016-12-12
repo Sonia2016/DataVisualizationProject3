@@ -6,6 +6,8 @@ Project 3: Network visualization
 
 
 <img width="1237" alt="p3 baee rayati sorbo" src="https://cloud.githubusercontent.com/assets/19417775/21087544/6e8bd4c4-bfec-11e6-9995-326843db4276.png">
+<img width="1194" alt="gene-page" src="https://cloud.githubusercontent.com/assets/19417775/21108012/31b45068-c059-11e6-9fcb-0fbf1db45cf4.png">
+
 
 
 ## Data description - Jeff
@@ -137,7 +139,7 @@ In pie chart we show the percentage of muation of the selected gene in correspon
 
 <img width="300" alt="piechart-1" src="https://cloud.githubusercontent.com/assets/19417775/21077930/4be1781e-bf21-11e6-9abd-3b2636d3f816.png">
 
-If you mouse over in each part of the pie chart it shows the corresponding information related to the study itself and percentage of mutation of the selected gene in that study
+If you click in each part of the pie chart it shows the corresponding information related to the selected study and percentage of mutation of the selected gene in that study and by double click you can reset the tooltip
 
 <img width="320" alt="piechart-2" src="https://cloud.githubusercontent.com/assets/19417775/21077953/3843c176-bf22-11e6-9074-66e7760f7a58.png">
 
@@ -145,7 +147,7 @@ If you press the Info button it goes to the anothe webpage that shows you detail
 <img width="752" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21077933/5418d5a4-bf21-11e6-8a38-9b8cfee653c2.png">
 
 ## Scatter plot - Patient infromation - Sonia
-By selecting the gene in the scatter plot we have the list of patient in two dimensions of number of mutations and also position (start and end positions) of the selected gene in those patients.
+By selecting the gene, the scatter plot we show the list of patients in two dimension, number of mutations and position (start and end positions) of the selected gene in those patients.
 
 <img width="906" alt="scatter-parallel-1" src="https://cloud.githubusercontent.com/assets/19417775/21077939/7154e892-bf21-11e6-8bc8-318cfed9795c.png">
 
@@ -153,9 +155,13 @@ Each patient (sample) related to this gene means has mutation on the selected ge
 
 <img width="336" alt="scatter-1" src="https://cloud.githubusercontent.com/assets/19417775/21077942/a67bbb04-bf21-11e6-8829-094aa9829085.png">
 
-If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... .
+If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... . You can see the patient ID on the top of the scatter plot.
 
-<img width="850" alt="selectpatient" src="https://cloud.githubusercontent.com/assets/19417775/21077940/9bd150a6-bf21-11e6-8fe9-69b6cc3a29ec.png">
+<img width="907" alt="screen shot 2016-12-12 at 10 56 58 am" src="https://cloud.githubusercontent.com/assets/19417775/21108161/cf7246ac-c059-11e6-8582-e16ecd2afb7e.png">
+
+By double click on the each dot you will reset the tooltip and also the parall cordinate.
+
+<img width="906" alt="screen shot 2016-12-12 at 10 58 28 am" src="https://cloud.githubusercontent.com/assets/19417775/21108192/f2d2da8a-c059-11e6-8d40-14dd3d828916.png">
 
 If you change the study the scatter plot would be updated based on the information of that study for the selected gene. Therefore, we have the list of patients in the selected study based on the selected gene.
 
