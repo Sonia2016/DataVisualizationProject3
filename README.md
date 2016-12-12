@@ -164,7 +164,8 @@ If you mouse over on each dot, the title of that dot will be appear in your scre
       
 If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... . You can see the patient ID on the top of the scatter plot and the selected circle color would be black.
 
-<img width="907" alt="screen shot 2016-12-12 at 10 56 58 am" src="https://cloud.githubusercontent.com/assets/19417775/21108161/cf7246ac-c059-11e6-8582-e16ecd2afb7e.png">
+<img width="774" alt="screen shot 2016-12-12 at 11 29 45 am" src="https://cloud.githubusercontent.com/assets/19417775/21109373/5d00b194-c05e-11e6-998d-5fc5c644daa4.png">
+
 
 By double click on the each dot you will reset the tooltip and also the parall cordinate.
 
