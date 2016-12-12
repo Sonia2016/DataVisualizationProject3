@@ -143,7 +143,7 @@
             .attr("text-anchor", "middle")
             .text( function(d, i) {return freqInStudy[i].value + '% of ' + valueArrays[i].length;});
 
-         arcs.on("mouseover", function (d,i) {
+         arcs.on("click", function (d,i) {
           if(i == 1){
            d3.select("#tooltip")
               .style("left", d3.event.pageX + "px")
@@ -189,7 +189,7 @@
               .text(genderStat[i].Male);  
             }
         })
-          .on("mouseout", function () {
+          .on("dblclick", function () {
           d3.select("#tooltip")
               .style("opacity", 0);;
         });
