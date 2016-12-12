@@ -425,7 +425,12 @@
               .text(selectedPatient)
     });
 
-
+   d3.selectAll(".dot").on("dblclick",function(d){
+       selectedPatient = "";
+       brushPatient();
+       d3.select("#tooltipscatter")
+              .style("opacity", 0);
+    });   
 
 
     var results = valueArrays[selected];
