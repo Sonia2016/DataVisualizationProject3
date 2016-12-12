@@ -417,11 +417,16 @@
     d3.selectAll(".dot").on("click",function(d){
        selectedPatient = d.case_id;
        brushPatient();
-      });
+       d3.select("#tooltipscatter")
+              .style("left", d3.event.pageX + "px")
+              .style("top", d3.event.pageY + "px")
+              .style("opacity", 1)
+              .select("#patientID")
+              .text(selectedPatient)
+    });
 
 
 
-////////////////
 
     var results = valueArrays[selected];
     results2=results.filter(function(d){
