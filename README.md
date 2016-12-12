@@ -40,7 +40,7 @@ For each of the four studies, a file was downloaded from the study's summary pag
   4. For Select Patient/Case Set, select Sequenced Tumors.
   5. For Enter Gene List, select User-defined List and enter the 17 gene symbols.
       The following screenshot illustrates these options.
-      ![](docs/MutualExclusivityQueryOptions.png)
+      ![](figures/MutualExclusivityQueryOptions.png)
   6. When the results are displayed, click the Mutual Exclusivity tab, scroll to the end of the page, and
       click Download Full Result.
   7. Rename the downloaded file `mutex_result [study_id].txt`.
@@ -85,7 +85,7 @@ The cBioPortal site provides a number of Web API methods [as described here](htt
 
 The following diagram illustrates these methods and their dependencies:
 
-![](docs/WebApiMethods.png)
+![](figures/WebApiMethods.png)
 
 Our application code includes calls to each of the nine API methods; however, only the `getClinicalData` and
 `getMutationData` methods were used ultimately in our visualizations.
