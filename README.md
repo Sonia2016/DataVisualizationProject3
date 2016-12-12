@@ -1,7 +1,7 @@
 # Data Visualization Project 3
 Project 3: Network visualization
 
-- Link to the Video: 
+- Link to the Video: https://youtu.be/SdsRduIigKY
 - Link to the Demo: https://sonia2016.github.io/DataVisualizationProject3/
 
 
