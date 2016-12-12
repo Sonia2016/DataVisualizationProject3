@@ -43,6 +43,7 @@ For each of the four studies, a file was downloaded from the study's summary pag
   5. For Enter Gene List, select User-defined List and enter the 17 gene symbols.
       The following screenshot illustrates these options.
       ![](figures/MutualExclusivityQueryOptions.png)
+
   6. When the results are displayed, click the Mutual Exclusivity tab, scroll to the end of the page, and
       click Download Full Result.
   7. Rename the downloaded file `mutex_result [study_id].txt`.
@@ -159,8 +160,8 @@ Each patient (sample) related to this gene means has mutation on the selected ge
 <img width="336" alt="scatter-1" src="https://cloud.githubusercontent.com/assets/19417775/21077942/a67bbb04-bf21-11e6-8829-094aa9829085.png">
 
 If you mouse over on each dot, the title of that dot will be appear in your screen that is patient(sample) id.
-
-
+![](figures/mouseover.png)
+      
 If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... . You can see the patient ID on the top of the scatter plot and the selected circle color would be black.
 
 <img width="907" alt="screen shot 2016-12-12 at 10 56 58 am" src="https://cloud.githubusercontent.com/assets/19417775/21108161/cf7246ac-c059-11e6-8582-e16ecd2afb7e.png">
