@@ -87,7 +87,7 @@
                   if(x.reference_read_count_normal != "NA")
                     startData.patientId = x["reference_read_count_tumor"];
                   else
-                    startData.patientId = 0;
+                    startData.patientId = x["case_id"];
                   startData.startPostion = x["start_position"];
                   startData.endPostion = x["end_position"];
                   startList.push(startData);
@@ -206,8 +206,8 @@
 
        
         var margin = {top: 20, right: 20, bottom: 30, left: 40},
-        width = 200 - margin.left - margin.right,
-        height = 240 - margin.top - margin.bottom;
+        width = 250 - margin.left - margin.right,
+        height = 250 - margin.top - margin.bottom;
 
         var x = d3.scale.linear()
             .range([0, width]);
@@ -234,6 +234,7 @@
 
 
         x.domain(d3.extent(startPos[selected], function(d) { return d.patientId; })).nice();
+        // x.domain([0, d3.max(startPos[selected], function(d) { return mutation[d.case_id]; })]).nice();
         y.domain(d3.extent(startPos[selected], function(d) { return d.startPostion; })).nice();
 
           svg.append("g")
@@ -241,17 +242,17 @@
               .attr("transform", "translate(0," + height + ")")
               .call(xAxis)
             .append("text")
-              .attr("class", "label")
+              .attr("class", "textplot")
               .attr("x", width)
               .attr("y", -6)
               .style("text-anchor", "end")
-              .text("Patient ID");
+               .text("Number of mutations");
 
           svg.append("g")
               .attr("class", "y axis")
               .call(yAxis)
             .append("text")
-              .attr("class", "label")
+              .attr("class", "textplot")
               .attr("transform", "rotate(-90)")
               .attr("y", 6)
               .attr("dy", ".71em")
@@ -265,7 +266,8 @@
               .attr("r", 3.5)
               .attr("cx", function(d) { return x(d.patientId); })
               .attr("cy", function(d) { return y(d.startPostion); })
-              .style("fill", function(d) { return color(d.patientId); });
+              .style("fill", function(d) { return color(d.patientId); })
+              .append("title", function(d){ return d.case_id;});
 
     };
 
@@ -294,7 +296,7 @@
                 if(x.reference_read_count_normal != "NA")
                   startData.patientId = x["reference_read_count_tumor"];
                 else
-                  startData.patientId = 0;
+                  startData.patientId = x["case_id"];
                 startData.case_id = x["case_id"];
                 startData.startPostion = x["start_position"];
                 startData.endPostion = x["end_position"];
@@ -318,8 +320,8 @@
       
    
       var margin = {top: 20, right: 20, bottom: 30, left: 40},
-      width = 200 - margin.left - margin.right,
-      height = 240 - margin.top - margin.bottom;
+      width = 250 - margin.left - margin.right,
+      height = 250 - margin.top - margin.bottom;
 
       var x = d3.scale.linear()
           .range([0, width]);
@@ -344,7 +346,7 @@
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-      //x.domain(d3.extent(startPos[selected], function(d) { return mutation[d.case_id]; })).nice();
+      // x.domain(d3.extent(startPos[selected], function(d) { return mutation[d.case_id]; })).nice();
       x.domain([0, d3.max(startPos[selected], function(d) { return mutation[d.case_id]; })]);
       y.domain(d3.extent(startPos[selected], function(d) { return d.startPostion; })).nice();
 
@@ -353,28 +355,25 @@
           .attr("transform", "translate(0," + height + ")")
           .call(xAxis)
         .append("text")
-          .attr("class", "label")
+          .attr("class", "textplot")
           .attr("x", width)
           .attr("y", -6)
           .style("text-anchor", "end")
-          .text("Number of mutations")
-          .attr("font-family", "helvetica")
-          .attr("font-size", "10px")
-          .attr("fill","black");
+          .text("Number of mutations");
+
 
       svg.append("g")
           .attr("class", "y axis")
           .call(yAxis)
         .append("text")
-          .attr("class", "label")
+          .attr("class", "textplot")
           .attr("transform", "rotate(-90)")
           .attr("y", 6)
           .attr("dy", ".71em")
           .style("text-anchor", "end")
-          .text("Gene position")
-          .attr("font-family", "helvetica")
-          .attr("font-size", "10px")
-          .attr("fill","black");
+          .text("Gene position");
+
+
 
       svg.selectAll(".dot")
           .attr("id", "dotId")
@@ -384,7 +383,9 @@
           .attr("r", 3.5)
           .attr("cx", function(d) { return x(mutation[d.case_id]); })
           .attr("cy", function(d) { return y(d.startPostion); })
-          .style("fill", function(d) { return color(d.case_id); });
+          .style("fill", function(d) { return color(d.case_id); })
+          .append("title")
+          .text(function(d) { return d.case_id;});  
               
     };      
 
@@ -423,6 +424,7 @@
        selectedPatient = d.case_id;
        brushPatient();
       });
+
 
 
 ////////////////
