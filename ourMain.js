@@ -84,10 +84,7 @@
                 if(start[x.gene_symbol] == undefined){
                   debugger;
                   var startData = {};
-                  if(x.reference_read_count_normal != "NA")
-                    startData.patientId = x["reference_read_count_tumor"];
-                  else
-                    startData.patientId = x["case_id"];
+                  startData.patientId = 0;
                   startData.startPostion = x["start_position"];
                   startData.endPostion = x["end_position"];
                   startList.push(startData);
@@ -293,10 +290,7 @@
             if(x.gene_symbol == geneName)
               if(start[x.gene_symbol] == undefined){
                 var startData = {};
-                if(x.reference_read_count_normal != "NA")
-                  startData.patientId = x["reference_read_count_tumor"];
-                else
-                  startData.patientId = x["case_id"];
+                startData.patientId = x["case_id"];
                 startData.case_id = x["case_id"];
                 startData.startPostion = x["start_position"];
                 startData.endPostion = x["end_position"];
