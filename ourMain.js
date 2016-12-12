@@ -152,19 +152,19 @@
               .select("#StudyName")
               .text(studyIds[i] + " - " + freqInStudy[i].value + "%");
 
-            d3.select("#tooltip")
-              .style("left", d3.event.pageX + "px")
-              .style("top", d3.event.pageY + "px")
-              .style("opacity", 1)
-              .select("#Female")
-              .text(genderStat[i].FEMALE);  
+//             d3.select("#tooltip")
+//               .style("left", d3.event.pageX + "px")
+//               .style("top", d3.event.pageY + "px")
+//               .style("opacity", 1)
+//               .select("#Female")
+//               .text(genderStat[i].FEMALE);  
 
-            d3.select("#tooltip")
-              .style("left", d3.event.pageX + "px")
-              .style("top", d3.event.pageY + "px")
-              .style("opacity", 1)
-              .select("#Male")
-              .text(genderStat[i].MALE);  
+//             d3.select("#tooltip")
+//               .style("left", d3.event.pageX + "px")
+//               .style("top", d3.event.pageY + "px")
+//               .style("opacity", 1)
+//               .select("#Male")
+//               .text(genderStat[i].MALE);  
             }
           else {
             d3.select("#tooltip")
@@ -174,19 +174,19 @@
               .select("#StudyName")
               .text(studyIds[i] + " - " + freqInStudy[i].value + "%");
 
-            d3.select("#tooltip")
-              .style("left", d3.event.pageX + "px")
-              .style("top", d3.event.pageY + "px")
-              .style("opacity", 1)
-              .select("#Female")
-              .text(genderStat[i].Female);  
+//             d3.select("#tooltip")
+//               .style("left", d3.event.pageX + "px")
+//               .style("top", d3.event.pageY + "px")
+//               .style("opacity", 1)
+//               .select("#Female")
+//               .text(genderStat[i].Female);  
 
-            d3.select("#tooltip")
-              .style("left", d3.event.pageX + "px")
-              .style("top", d3.event.pageY + "px")
-              .style("opacity", 1)
-              .select("#Male")
-              .text(genderStat[i].Male);  
+//             d3.select("#tooltip")
+//               .style("left", d3.event.pageX + "px")
+//               .style("top", d3.event.pageY + "px")
+//               .style("opacity", 1)
+//               .select("#Male")
+//               .text(genderStat[i].Male);  
             }
         })
           .on("dblclick", function () {
