@@ -1,6 +1,12 @@
 # Data Visualization Project 3
 Project 3: Network visualization
 
+- Link to the Demo: https://sonia2016.github.io/DataVisualizationProject3/
+- Link to the Video: 
+
+<img width="1237" alt="p3 baee rayati sorbo" src="https://cloud.githubusercontent.com/assets/19417775/21087544/6e8bd4c4-bfec-11e6-9995-326843db4276.png">
+
+
 ## Data description
 
 ### cBioPortal sources
