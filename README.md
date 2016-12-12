@@ -89,26 +89,6 @@ exception of IE 11.
 
 
 ## Cancer selection
-<img width="1234" alt="first page" src="https://cloud.githubusercontent.com/assets/19417775/21061340/8e822288-be11-11e6-9e2b-20419c6e97fe.png">
-
-Different location has different statistics for cancers
-<img width="889" alt="location" src="https://cloud.githubusercontent.com/assets/19417775/21061341/900e97f8-be11-11e6-8d9d-cef984395c01.png">
-
-By pressing on the image you direct to the page that shows you the gene information
-<img width="1082" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21061486/335d5d7c-be12-11e6-858d-08a193ab684a.png">
-
-
-## Patient Information
-As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
-Whenever you select a gene amongst these genes, our application shows:
-
-1. Information related to the each study
-2. Information related to the positions and number of mutation of this gene in patient that has mutation on these gene
-
-
-
-
-## Cancer selection
 We chose to work on the Melanoma skin cancer based on the Melanoma is the least common but the most deadly skin cancer, accounting for only about 1% of all cases, but the vast majority of skin cancer death.
 In 2016, it is estimated that there will be 76,380 new cases of melanoma in the United States and 10,130 deaths from the disease.
 <img width="1234" alt="first page" src="https://cloud.githubusercontent.com/assets/19417775/21061340/8e822288-be11-11e6-9e2b-20419c6e97fe.png">
@@ -139,8 +119,6 @@ In the parallel Coordinate graph we show the information related to each study. 
 ![ScreenShot](figures/pc2.png)
 
 
-
-
 The reason we selected the parrallel coordinate is that the study informtion is more about the demograohy of the study. With this graph we can notice, first of all, the range of each parameters very easily. Second, we can wee some relations between the parametes quite easily. For example in the picture below you ca easilty infer that the higher the age is the lower the mean polidity and vise versa. 
 ![ScreenShot](figures/pc1.png)
 
@@ -149,22 +127,34 @@ The colors in parrallel coordinates is also connected to the colors in the scatt
 
 ## Pie chart - Gene information in study 
 In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
+
 <img width="300" alt="piechart-1" src="https://cloud.githubusercontent.com/assets/19417775/21077930/4be1781e-bf21-11e6-9abd-3b2636d3f816.png">
+
 If you mouse over in each part of the pie chart it shows the corresponding information related to the study itself and percentage of mutation of the selected gene in that study
+
 <img width="320" alt="piechart-2" src="https://cloud.githubusercontent.com/assets/19417775/21077953/3843c176-bf22-11e6-9074-66e7760f7a58.png">
+
 If you press the Info button it goes to the anothe webpage that shows you detailed description and information related to the selected gene.
 <img width="752" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21077933/5418d5a4-bf21-11e6-8a38-9b8cfee653c2.png">
 
 ## Scatter plot - Patient infromation
 By selecting the gene in the scatter plot we have the list of patient in two dimensions of number of mutations and also position (start and end positions) of the selected gene in those patients.
+
 <img width="906" alt="scatter-parallel-1" src="https://cloud.githubusercontent.com/assets/19417775/21077939/7154e892-bf21-11e6-8bc8-318cfed9795c.png">
+
 Each patient (sample) related to this gene means has mutation on the selected gene and also this gene can be appeared in different location in his/her chromosome. So, in this plot we are showing the list of patients that have muation on the selected gene by considering the position and number of mutations.
+
 <img width="336" alt="scatter-1" src="https://cloud.githubusercontent.com/assets/19417775/21077942/a67bbb04-bf21-11e6-8829-094aa9829085.png">
+
 If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... .
+
 <img width="850" alt="selectpatient" src="https://cloud.githubusercontent.com/assets/19417775/21077940/9bd150a6-bf21-11e6-8fe9-69b6cc3a29ec.png">
+
 If you change the study the scatter plot would be updated based on the information of that study for the selected gene. Therefore, we have the list of patients in the selected study based on the selected gene.
+
 <img width="831" alt="patientparallel" src="https://cloud.githubusercontent.com/assets/19417775/21077980/bbd32576-bf23-11e6-98f5-672b002cddfa.png">
 <img width="814" alt="patientparallel2" src="https://cloud.githubusercontent.com/assets/19417775/21077982/cba4a7ea-bf23-11e6-8914-26642310744f.png">
+
 #### Claim
 Our first claim was the relation between the position and number of mutation but as you can see in the diagram they are not related so far!
 
