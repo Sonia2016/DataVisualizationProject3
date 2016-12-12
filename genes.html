@@ -455,7 +455,13 @@ table, th, td {
 		</div>
     <div>
 		  <div style="display: inline-block;" id="studyInfo"></div>
-      <div style="display: inline-block;" id="scatter"></div>
+       <div style="display: inline-block;" id="scatter">
+       <h4 align="center"> Patient information for selected gene</h4>
+        <div id="tooltipscatter" class="hidden">
+          <p align="center"><b>Selected Patient ID: </b><span id="patientID"></span></p>
+        </div>
+
+      </div>
     </div>
     
 
@@ -471,8 +477,8 @@ table, th, td {
    <div id="tooltip" class="hidden">
       <p><b>Study Info</b></p>
       <p><b>Name: </b><span id="StudyName"></span></p>
-      <p><b>Number of Female: </b><span id="Female"></span></p> 
-      <p><b>Number of Male: </b><span id="Male"></span></p>
+      <p><b>Number of Female in this study: </b><span id="Female"></span></p> 
+      <p><b>Number of Male in this study: </b><span id="Male"></span></p>
     </div>
  
 </div>
