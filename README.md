@@ -141,7 +141,10 @@ In pie chart we show the percentage of muation of the selected gene in correspon
 
 If you click in each part of the pie chart it shows the corresponding information related to the selected study and percentage of mutation of the selected gene in that study and by double click you can reset the tooltip
 
-<img width="320" alt="piechart-2" src="https://cloud.githubusercontent.com/assets/19417775/21077953/3843c176-bf22-11e6-9074-66e7760f7a58.png">
+<img width="298" alt="screen shot 2016-12-12 at 11 00 31 am" src="https://cloud.githubusercontent.com/assets/19417775/21108261/437e9e9c-c05a-11e6-8ac5-74f4d33d25d2.png">
+
+<img width="296" alt="screen shot 2016-12-12 at 10 55 08 am" src="https://cloud.githubusercontent.com/assets/19417775/21108295/5678b726-c05a-11e6-9ecc-412c314b0758.png">
+
 
 If you press the Info button it goes to the anothe webpage that shows you detailed description and information related to the selected gene.
 <img width="752" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21077933/5418d5a4-bf21-11e6-8a38-9b8cfee653c2.png">
