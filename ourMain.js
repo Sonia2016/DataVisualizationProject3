@@ -412,11 +412,14 @@
         },{})
     }
       
-
+ 
+      
+    var colorPatient = d3.scale.category20();  
 
     d3.selectAll(".dot").on("click",function(d){
        selectedPatient = d.case_id;
        brushPatient();
+       d3.select(this).style("fill", "black"); 
        d3.select("#tooltipscatter")
               .style("left", d3.event.pageX + "px")
               .style("top", d3.event.pageY + "px")
@@ -428,8 +431,8 @@
    d3.selectAll(".dot").on("dblclick",function(d){
        selectedPatient = "";
        brushPatient();
-       d3.select("#tooltipscatter")
-              .style("opacity", 0);
+       d3.select(this).style("fill", function(d) {return colorPatient(d.case_id);});
+       d3.select("#tooltipscatter").style("opacity", 0);
     });   
 
 
