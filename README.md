@@ -1,13 +1,14 @@
 # Data Visualization Project 3
 Project 3: Network visualization
 
-- Link to the Demo: https://sonia2016.github.io/DataVisualizationProject3/
 - Link to the Video: 
+- Link to the Demo: https://sonia2016.github.io/DataVisualizationProject3/
+
 
 <img width="1237" alt="p3 baee rayati sorbo" src="https://cloud.githubusercontent.com/assets/19417775/21087544/6e8bd4c4-bfec-11e6-9995-326843db4276.png">
 
 
-## Data description
+## Data description - Jeff
 
 ### cBioPortal sources
 
@@ -94,7 +95,7 @@ calls are wrapped in ES6 Promises. This feature is supported by most modern brow
 exception of IE 11.
 
 
-## Cancer selection
+## Cancer selection 
 We chose to work on the Melanoma skin cancer based on the Melanoma is the least common but the most deadly skin cancer, accounting for only about 1% of all cases, but the vast majority of skin cancer death.
 In 2016, it is estimated that there will be 76,380 new cases of melanoma in the United States and 10,130 deaths from the disease.
 <img width="1234" alt="first page" src="https://cloud.githubusercontent.com/assets/19417775/21061340/8e822288-be11-11e6-9e2b-20419c6e97fe.png">
@@ -103,12 +104,12 @@ The frequency of cancer can be find in the world map location. And also by mouse
 By pressing on the image you direct to the page that shows you more detail about the gene information.
 <img width="1082" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21061486/335d5d7c-be12-11e6-858d-08a193ab684a.png">
 
-### Gene/Protein Selector:
+### Gene/Protein Selector
 This panel provides an overview of a subset of millions of index cards in the database, such as protein interaction within the *cos-7* cell line. Users can select any protein within this overview network to start with. Users also have the option to instead input protein name into a search box as depicted in the left panel of the following figure. This will perform a request to load the selected protein and its immediate neighbors from our index card database. As users iteratively expand the subnetwork in the main view, the overview keeps track of the expanded sub-network over the overall context as depicted in the right panel.
 As we mentioned in the data description section, we worked with 17th genes because we choose Melanoma Cancer for working and it has 4 studises related to this cancer in cbioPortal and we intersect the genes between these four and the current template finally we have 17th genes/proteins for work.
 <img width="1267" alt="select" src="https://cloud.githubusercontent.com/assets/19417775/21077922/29476b60-bf21-11e6-9d67-f219f199890f.png">
 
-### Gene/Protein Networks View:
+### Gene/Protein Networks View
 In this view, node (protein) sizes are computed based on the number of direct neighbors. Edges (index cards) are color-encoded by interaction types. BioLinker supports finding paths between selected proteins. The following figure shows an example. Users specify source, target, and the maximum number of hops in between source and target. BioLinker displays all possible paths under that condition. Source node is pinned to the left while target node is pinned to the right of the visualization. The shortest path from *PIK3CA* to *TRAF6* goes through two hops *Akt* and *NF-kappaB*. In this example, we also overlay cancer genomics data onto the network: purple nodes are proteins with high copy number alteration in the Bladder Urothelial Carcinoma study (TCGA, Nature 2014). BioLinker accesses this cancer study on [cBioPortal](http://www.cbioportal.org/) through its web service interface.
 ![ScreenShot](https://github.com/CreativeCodingLab/BioLinker/blob/master/figures/Figure4.png)
 After selecting the gene APC you can see the network of these gene
@@ -120,7 +121,7 @@ Whenever you select a gene amongst these genes, our application shows:
 1. Information related to the each study
 2. Information related to the positions and number of mutation of this gene in patients that have mutation on these gene
 
-## Parallel Coordinate - Study Information
+## Parallel Coordinate - Study Information - Maede
 In the parallel Coordinate graph we show the information related to each study. Each study has some information about the patient involved in that study. The informations for each study is different in two sense. 1)The patient Id's are different. 2) The parametes are different. For example in one study we have "gender" but not in another. So what we did was to select the more important parameters in each study and show them in parralle coordinates when that study was selected. The parameters in each study are either numerical or categorical. The color of lines can change based on both numerical and categorical category. If the parameter which is selected for coloring is numerical then the color will change in the range of blue to orange. However if the parameter selected is categorical the color will change categorically because the rangedoes not show any relation between categories any more. The picture below illutrates this. The "Tumor Site" parameter is a categorical parameter and as you see the coloring in it is caegorical. But n the same study if we chose to color by age we see that colors appear in a range
 ![ScreenShot](figures/pc2.png)
 
@@ -131,7 +132,7 @@ The reason we selected the parrallel coordinate is that the study informtion is 
 
 The colors in parrallel coordinates is also connected to the colors in the scatterplot which will be explained in the next section. 
 
-## Pie chart - Gene information in study 
+## Pie chart - Gene information in study - Sonia
 In pie chart we show the percentage of muation of the selected gene in corresponding study and also the number of female and male in each study.
 
 <img width="300" alt="piechart-1" src="https://cloud.githubusercontent.com/assets/19417775/21077930/4be1781e-bf21-11e6-9abd-3b2636d3f816.png">
@@ -143,7 +144,7 @@ If you mouse over in each part of the pie chart it shows the corresponding infor
 If you press the Info button it goes to the anothe webpage that shows you detailed description and information related to the selected gene.
 <img width="752" alt="geneinfo" src="https://cloud.githubusercontent.com/assets/19417775/21077933/5418d5a4-bf21-11e6-8a38-9b8cfee653c2.png">
 
-## Scatter plot - Patient infromation
+## Scatter plot - Patient infromation - Sonia
 By selecting the gene in the scatter plot we have the list of patient in two dimensions of number of mutations and also position (start and end positions) of the selected gene in those patients.
 
 <img width="906" alt="scatter-parallel-1" src="https://cloud.githubusercontent.com/assets/19417775/21077939/7154e892-bf21-11e6-8bc8-318cfed9795c.png">
