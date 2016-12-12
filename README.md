@@ -154,11 +154,14 @@ By selecting the gene, the scatter plot we show the list of patients in two dime
 
 <img width="906" alt="scatter-parallel-1" src="https://cloud.githubusercontent.com/assets/19417775/21077939/7154e892-bf21-11e6-8bc8-318cfed9795c.png">
 
-Each patient (sample) related to this gene means has mutation on the selected gene and also this gene can be appeared in different location in his/her chromosome. So, in this plot we are showing the list of patients that have muation on the selected gene by considering the position and number of mutations.
+Each patient (sample) related to this gene means has mutation on the selected gene and also this gene can be appeared in different location in his/her chromosome. So, in this plot we are showing the list of patients that have muation on the selected gene by considering the position and number of mutations. 
 
 <img width="336" alt="scatter-1" src="https://cloud.githubusercontent.com/assets/19417775/21077942/a67bbb04-bf21-11e6-8829-094aa9829085.png">
 
-If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... . You can see the patient ID on the top of the scatter plot.
+If you mouse over on each dot, the title of that dot will be appear in your screen that is patient(sample) id.
+
+
+If you click on the one circle (patient) on the scatter plot you can see the related information of that specific patient on the parallel cordinate. Such as; age, geneder, ... . You can see the patient ID on the top of the scatter plot and the selected circle color would be black.
 
 <img width="907" alt="screen shot 2016-12-12 at 10 56 58 am" src="https://cloud.githubusercontent.com/assets/19417775/21108161/cf7246ac-c059-11e6-8582-e16ecd2afb7e.png">
 
