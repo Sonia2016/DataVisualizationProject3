@@ -263,7 +263,7 @@
               .attr("r", 3.5)
               .attr("cx", function(d) { return x(d.patientId); })
               .attr("cy", function(d) { return y(d.startPostion); })
-              .style("fill", function(d) { return color(d.patientId); })
+              .style("fill", function(d) { return "white"; })
               .append("title", function(d){ return d.case_id;});
 
     };
@@ -377,7 +377,7 @@
           .attr("r", 3.5)
           .attr("cx", function(d) { return x(mutation[d.case_id]); })
           .attr("cy", function(d) { return y(d.startPostion); })
-          .style("fill", function(d) { return color(d.case_id); })
+          .style("fill", function(d) { return "white"; })
           .append("title")
           .text(function(d) { return d.case_id;});  
               
@@ -431,7 +431,7 @@
    d3.selectAll(".dot").on("dblclick",function(d){
        selectedPatient = "";
        brushPatient();
-       d3.select(this).style("fill", function(d) {return colorPatient(d.case_id);});
+       d3.select(this).style("fill", function(d) {return "white";});
        d3.select("#tooltipscatter").style("opacity", 0);
     });   
 
